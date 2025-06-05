@@ -1,27 +1,103 @@
-@import './base.css';
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #463d3d;
+  background-color: #fff8e3;
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
-}
+  .side-by-side {
+    display: flex;
+    gap: 32px;
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
-}
+    main {
+      margin-right: 28px;
+    }
+  }
 
-@media (hover: hover) {
+  h2,
+  .heading {
+    font-family: Gaegu;
+    font-size: 40px;
+    margin: 16px 0px;
+  }
+
+  .btn-primary {
+    color: #fff;
+    background-color: #463d3d;
+    border: none;
+    border-radius: 32px;
+    font-family: Gaegu, sans-serif;
+    padding: 8px 12px;
+    font-size: 20px;
+    min-width: 100px;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  .btn-primary:hover {
+    background-color: #a17c6d;
+  }
+
+  a {
+    text-decoration: none;
+    color: #463d3d;
+  }
+
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    text-decoration: none;
+    color: #ea85e6;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 4px;
+  }
+
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  }
+
+  .lighbox-gallery {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px;
+      margin-right: 12px;
+
+      .col {
+        position: relative;
+        width: 100%;
+      }
+
+      img.grid-img,
+      .img-fluid {
+        width: 100%;
+        margin-bottom: 8px;
+        cursor: pointer;
+      }
+    }
   }
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   body {
     display: flex;
     place-items: center;
@@ -32,4 +108,4 @@ a,
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
-}
+} */
