@@ -3,7 +3,7 @@ import LightboxImage from '../components/LightboxImage.vue'
 </script>
 
 <template>
-  <div>
+  <div class="page-content">
     <div class="heading">Abstract Work, 2019-Present</div>
     <div class="lighbox-gallery">
       <div class="grid">
@@ -39,12 +39,12 @@ import LightboxImage from '../components/LightboxImage.vue'
         </div>
         <div class="col item">
           <LightboxImage
-            img-ref="src/assets/img/abstract/sams-fire.png"
-            caption="Sam's Fire, digital painting. 2022."
-          />
-          <LightboxImage
             img-ref="src/assets/img/abstract/been.png"
             caption="Been hearing my name be called, been far from home. Digital painting. 2021."
+          />
+          <LightboxImage
+            img-ref="src/assets/img/abstract/sams-fire.png"
+            caption="Sam's Fire, digital painting. 2022."
           />
           <LightboxImage
             img-ref="src/assets/img/abstract/big-bright.png"
@@ -97,3 +97,10 @@ import LightboxImage from '../components/LightboxImage.vue'
     </div>
   </div>
 </template>
+
+<style scoped>
+body {
+  background-color: #fff8e3;
+  background-image: none;
+}
+</style>

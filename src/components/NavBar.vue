@@ -2,6 +2,8 @@
 import { ref, type Ref } from 'vue'
 import { RouterLink } from 'vue-router'
 
+const menuOpen: Ref<boolean> = ref(false)
+
 const paintingOpen: Ref<boolean> = ref(false)
 const muralsOpen: Ref<boolean> = ref(false)
 const contactOpen: Ref<boolean> = ref(false)
@@ -10,10 +12,14 @@ const contactOpen: Ref<boolean> = ref(false)
 <template>
   <nav class="navbar navbar-expand">
     <div class="container">
-      <div class="justify-center">
+      <span class="material-icons hamburger" @click="menuOpen = !menuOpen">
+        {{ menuOpen ? 'close' : 'menu' }}
+      </span>
+      <div class="logo-box">
         <RouterLink to="/"> <img class="logo" src="../assets/img/logo-no-bg.png" /></RouterLink>
       </div>
-      <div class="accordion" role="tablist">
+      <div class="accordion" role="tablist" :class="{ show: menuOpen }">
+        <div v-show="menuOpen" class="heading">Meadow Paints</div>
         <div class="accordion-item">
           <div class="accordion-header" role="tab">
             <button class="accordion-button" type="button" @click="paintingOpen = !paintingOpen">
@@ -22,15 +28,13 @@ const contactOpen: Ref<boolean> = ref(false)
             </button>
           </div>
 
-          <div class="accordion-body" role="tabpanel" v-if="paintingOpen">
-            <ul>
-              <li>
-                <RouterLink to="/mitosis">Mitosis</RouterLink>
-              </li>
-              <li><RouterLink to="/abstract">Abstract Work</RouterLink></li>
-              <li><RouterLink to="/paintings">Other Work</RouterLink></li>
-            </ul>
-          </div>
+          <ul class="accordion-body" role="tabpanel" v-if="paintingOpen">
+            <li>
+              <RouterLink to="/mitosis">Mitosis</RouterLink>
+            </li>
+            <li><RouterLink to="/abstract">Abstract Work</RouterLink></li>
+            <li><RouterLink to="/paintings">Other Work</RouterLink></li>
+          </ul>
         </div>
         <div class="accordion-item">
           <div class="accordion-header" role="tab">
@@ -39,12 +43,10 @@ const contactOpen: Ref<boolean> = ref(false)
               <span class="material-icons">{{ muralsOpen ? 'expand_less' : 'expand_more' }}</span>
             </button>
           </div>
-          <div class="accordion-body" role="tabpanel" v-if="muralsOpen">
-            <ul>
-              <li><RouterLink to="/highland">Park People</RouterLink></li>
-              <li><RouterLink to="/fish">Mini Fish</RouterLink></li>
-            </ul>
-          </div>
+          <ul class="accordion-body" role="tabpanel" v-if="muralsOpen">
+            <li><RouterLink to="/highland">Park People</RouterLink></li>
+            <li><RouterLink to="/fish">Mini Fish</RouterLink></li>
+          </ul>
         </div>
         <div class="accordion-item">
           <div class="accordion-header" role="tab">
@@ -89,19 +91,38 @@ const contactOpen: Ref<boolean> = ref(false)
             </form>
           </div>
         </div>
+        <div class="accordion-button">
+          <RouterLink to="/about">About</RouterLink>
+        </div>
+        <div>
+          <a href="https://instagram.com/meadowpaints" target="_blank">
+            <img src="..\assets\img\instagram.svg" class="ig" />
+          </a>
+        </div>
       </div>
     </div>
   </nav>
 </template>
 
 <style scoped>
-nav {
-  width: 240px;
-  margin-top: 16px;
+.hamburger {
+  display: none;
+  font-size: 40px;
+  cursor: pointer;
 }
 
-.accordion-header {
-  margin: 8px;
+img.logo {
+  width: 100px;
+}
+
+img.ig {
+  width: 36px;
+  color: #463d3d;
+  margin-top: 8px;
+}
+
+.accordion {
+  min-width: 180px;
 }
 
 .accordion-button {
@@ -115,12 +136,17 @@ nav {
   align-items: center;
   gap: 8px;
   color: #463d3d;
+  padding: 0px;
+}
+
+.accordion-body {
+  margin-bottom: 8px;
 }
 
 ul {
   list-style: none;
   margin: 0px;
-  padding-left: 24px;
+  padding-left: 16px;
 }
 
 .justify-center {
@@ -130,16 +156,49 @@ ul {
 }
 
 .accordion-body.form {
-  margin-left: 24px;
+  margin-left: 16px;
   max-width: 200px;
-}
-
-img.logo {
-  width: 100px;
 }
 
 .msg {
   margin-bottom: 8px;
   font-size: 14px;
+}
+
+@media (max-width: 1040px) {
+  .container {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    margin-top: -12px;
+  }
+
+  .accordion {
+    display: flex;
+    gap: 16px;
+  }
+
+  img.ig {
+    margin-top: 12px;
+    margin-left: 8px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .accordion {
+    display: none;
+  }
+
+  .show {
+    display: block;
+    margin-top: 8px;
+  }
 }
 </style>

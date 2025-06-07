@@ -3,7 +3,7 @@ import LightboxImage from '../components/LightboxImage.vue'
 </script>
 
 <template>
-  <div>
+  <div class="page-content">
     <div class="heading">Other Work, 2020-2025</div>
     <div class="lighbox-gallery">
       <div class="grid">
