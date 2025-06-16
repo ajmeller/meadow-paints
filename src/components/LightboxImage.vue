@@ -2,7 +2,10 @@
 import { ref, type Ref } from 'vue'
 
 defineProps({
-  imgRef: String,
+  image: {
+    type: String,
+    default: '',
+  },
   caption: String,
   alt: String,
 })
@@ -11,7 +14,7 @@ const showLighbox: Ref<boolean> = ref(false)
 </script>
 
 <template>
-  <img class="grid-img" :src="imgRef" :alt="alt" @click="showLighbox = true" />
+  <img class="grid-img" :src="image" :alt="alt" @click="showLighbox = true" />
 
   <Teleport to="body">
     <Transition name="modal">
@@ -21,7 +24,7 @@ const showLighbox: Ref<boolean> = ref(false)
             <button @click="showLighbox = false" class="close-btn">
               <span class="material-icons">close</span>
             </button>
-            <div class="lightbox-img"><img :src="imgRef" alt="" /></div>
+            <div class="lightbox-img"><img :src="image" alt="" /></div>
           </div>
           <div v-if="caption" class="caption">{{ caption }}</div>
         </div>

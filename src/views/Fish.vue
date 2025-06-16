@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import LightboxImage from '../components/LightboxImage.vue'
+import Logperch2 from '../assets/img/logperch/logperch2.png'
+import Logperch3 from '../assets/img/logperch/logperch3.png'
+import Logperch4 from '../assets/img/logperch/logperch4.png'
 </script>
 
 <template>
@@ -14,13 +17,13 @@ import LightboxImage from '../components/LightboxImage.vue'
       />
       <div class="grid">
         <div class="col item">
-          <LightboxImage img-ref="/assets/img/logperch/logperch4.png" />
+          <LightboxImage :image="Logperch4" />
         </div>
         <div class="col item">
-          <LightboxImage img-ref="../assets/img/logperch/logperch3.png" />
+          <LightboxImage :image="Logperch3" />
         </div>
         <div class="col item">
-          <LightboxImage img-ref="assets/img/logperch/logperch2.png" />
+          <LightboxImage :image="Logperch2" />
         </div>
       </div>
     </div>
