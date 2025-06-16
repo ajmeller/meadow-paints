@@ -5,7 +5,7 @@ body {
   background-image: url('../assets/img/background.png');
   background-size: cover;
   margin: 20px;
-  height: calc(100vh - 40px);
+  height: 100%;
 
   .side-by-side {
     display: flex;
@@ -16,6 +16,10 @@ body {
     font-family: Gaegu;
     font-size: 40px;
     margin-bottom: 16px;
+  }
+
+  .description {
+    margin-bottom: 20px;
   }
 
   .btn-primary {

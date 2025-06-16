@@ -56,8 +56,8 @@ const contactOpen: Ref<boolean> = ref(false)
             </button>
           </div>
           <div class="accordion-body form" role="tabpanel" v-if="contactOpen">
-            <div class="msg">Email me at meller.alyssa@gmail.com or submit the form below.</div>
-            <form method="post">
+            <div class="msg">Please email me directly at meller.alyssa@gmail.com</div>
+            <!-- <form method="post">
               <div>
                 <input
                   class="form-control"
@@ -88,7 +88,7 @@ const contactOpen: Ref<boolean> = ref(false)
               <div class="justify-center">
                 <button class="btn btn-primary" type="submit">Send</button>
               </div>
-            </form>
+            </form> -->
           </div>
         </div>
         <div class="accordion-button">

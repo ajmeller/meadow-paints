@@ -6,6 +6,13 @@ import LightboxImage from '../components/LightboxImage.vue'
 <template>
   <div class="page-content">
     <div class="heading">Park People, 2024</div>
+    <div class="description">
+      This mural was commissioned by the Highland Park Neighborhood Arts Committee, and is located
+      in Highland Park in Grand Rapids, MI. There are 33 posts, and each is painted with a species
+      found in the park. Together, the posts pay homage to all the people that inhabit and play in
+      the park, human and non. The posts are an invitation to explore and observe the great
+      diversity of beings, activities, and landscapes found in this beautiful urban park.
+    </div>
     <div class="lighbox-gallery">
       <div class="grid">
         <div class="col item">

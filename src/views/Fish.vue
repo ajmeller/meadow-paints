@@ -5,6 +5,7 @@ import LightboxImage from '../components/LightboxImage.vue'
 <template>
   <div class="page-content">
     <div class="heading">Pleasant Peninsula Mini Fish Mural, 2024</div>
+    <div class="description"></div>
     <div class="lighbox-gallery">
       <img
         class="big-img"

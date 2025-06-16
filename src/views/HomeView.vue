@@ -16,24 +16,17 @@
   margin-left: 32px;
 }
 
-.heading {
-  display: none;
-}
-
 img {
   width: 100%;
 }
 
-@media (min-width: 850px) {
+@media (max-width: 850px) {
   .heading {
-    display: block;
-    width: 200px;
-    text-wrap: auto;
-    top: 0%;
+    display: none;
   }
 }
 
-@media (min-width: 1020px) {
+@media (min-width: 1040px) {
   main {
     position: relative;
     display: inline-block;
@@ -50,27 +43,28 @@ img {
   }
 
   .heading {
-    top: 4%;
-    left: 0;
+    left: 6%;
     z-index: 100;
     font-size: 60px;
+    width: 200px;
+    text-wrap: auto;
   }
 
   .dropped {
     width: 350px;
-    left: 0;
-    top: 28%;
+    left: 2%;
+    top: 26%;
   }
 
   .logperch {
     width: 450px;
-    right: 11%;
+    right: 12%;
     top: 2%;
   }
 
   .chippy {
     width: 200px;
-    right: 0;
+    right: 3%;
     top: 31%;
     z-index: 4;
     border-top-left-radius: 39%;
@@ -78,8 +72,8 @@ img {
   }
 
   .belong {
-    left: 38%;
-    top: 50%;
+    left: 35%;
+    top: 48%;
     width: 200px;
     border-radius: 50%;
     z-index: 3;
@@ -87,8 +81,15 @@ img {
 
   .sam {
     width: 200px;
-    left: 52%;
+    left: 47%;
     top: 63%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .heading {
+    width: fit-content;
+    top: 5%;
   }
 }
 </style>
