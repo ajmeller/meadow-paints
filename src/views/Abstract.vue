@@ -9,7 +9,7 @@ import LightboxImage from '../components/LightboxImage.vue'
       <div class="grid">
         <div class="col item">
           <LightboxImage
-            img-ref="../src/assets/img/abstract/doing.png"
+            img-ref="src/assets/img/abstract/doing.png"
             caption="Doin' it all wrong, digital painting. 2023."
           />
           <LightboxImage

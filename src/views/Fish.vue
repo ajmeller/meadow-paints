@@ -14,13 +14,13 @@ import LightboxImage from '../components/LightboxImage.vue'
       />
       <div class="grid">
         <div class="col item">
-          <LightboxImage img-ref="src/assets/img/logperch/logperch4.png" />
+          <LightboxImage img-ref="/assets/img/logperch/logperch4.png" />
         </div>
         <div class="col item">
-          <LightboxImage img-ref="src/assets/img/logperch/logperch3.png" />
+          <LightboxImage img-ref="../assets/img/logperch/logperch3.png" />
         </div>
         <div class="col item">
-          <LightboxImage img-ref="src/assets/img/logperch/logperch2.png" />
+          <LightboxImage img-ref="assets/img/logperch/logperch2.png" />
         </div>
       </div>
     </div>
