@@ -1,6 +1,21 @@
-assets/img/
 <script setup lang="ts">
 import LightboxImage from '../components/LightboxImage.vue'
+import Chippy from '../assets/img/posts/chippy.png'
+import Goldenrod2 from '../assets/img/posts/goldenrod2.png'
+import Asters from '../assets/img/posts/asters.jpg'
+import Monarchs from '../assets/img/posts/monarchs.png'
+import Toads from '../assets/img/posts/toads.jpg'
+import All2 from '../assets/img/posts/all2.jpg'
+import WhiteRot from '../assets/img/posts/white-rot.jpg'
+import Mycellium from '../assets/img/posts/mycellium.png'
+import Gigi from '../assets/img/posts/gigi.png'
+import Conehead from '../assets/img/posts/conehead.jpg'
+import All from '../assets/img/posts/all.jpg'
+import Cottonwood from '../assets/img/posts/cottonwood.png'
+import Bluejays from '../assets/img/posts/bluejays.png'
+import Milkweed from '../assets/img/posts/milkweed.png'
+import Goldenrod from '../assets/img/posts/goldenrod.png'
+import Cardinals from '../assets/img/posts/cardinals.jpg'
 </script>
 
 <template>
@@ -16,26 +31,26 @@ import LightboxImage from '../components/LightboxImage.vue'
     <div class="lighbox-gallery">
       <div class="grid">
         <div class="col item">
-          <LightboxImage img-ref="src/assets/img/posts/chippy.png" />
-          <LightboxImage img-ref="src/assets/img/posts/goldenrod2.png" />
-          <LightboxImage img-ref="src/assets/img/posts/asters.jpg" />
-          <LightboxImage img-ref="src/assets/img/posts/monarchs.png" />
-          <LightboxImage img-ref="src/assets/img/posts/toads.jpg" />
+          <LightboxImage :image="Chippy" />
+          <LightboxImage :image="Goldenrod2" />
+          <LightboxImage :image="Asters" />
+          <LightboxImage :image="Monarchs" />
+          <LightboxImage :image="Toads" />
         </div>
         <div class="col item">
-          <LightboxImage img-ref="src/assets/img/posts/all2.jpg" />
-          <LightboxImage img-ref="src/assets/img/posts/white-rot.jpg" />
-          <LightboxImage img-ref="src/assets/img/posts/mycellium.png" />
-          <LightboxImage img-ref="src/assets/img/posts/gigi.png" />
-          <LightboxImage img-ref="src/assets/img/posts/conehead.jpg" />
+          <LightboxImage :image="All2" />
+          <LightboxImage :image="WhiteRot" />
+          <LightboxImage :image="Mycellium" />
+          <LightboxImage :image="Gigi" />
+          <LightboxImage :image="Conehead" />
         </div>
         <div class="col item">
-          <LightboxImage img-ref="src/assets/img/posts/all.jpg" />
-          <LightboxImage img-ref="src/assets/img/posts/cottonwood.png" />
-          <LightboxImage img-ref="src/assets/img/posts/bluejays.png" />
-          <LightboxImage img-ref="src/assets/img/posts/milkweed.png" />
-          <LightboxImage img-ref="src/assets/img/posts/goldenrod.png" />
-          <LightboxImage img-ref="src/assets/img/posts/cardinals.jpg" />
+          <LightboxImage :image="All" />
+          <LightboxImage :image="Cottonwood" />
+          <LightboxImage :image="Bluejays" />
+          <LightboxImage :image="Milkweed" />
+          <LightboxImage :image="Goldenrod" />
+          <LightboxImage :image="Cardinals" />
         </div>
       </div>
     </div>

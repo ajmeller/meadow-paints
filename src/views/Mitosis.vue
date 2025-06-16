@@ -1,12 +1,22 @@
 <script setup lang="ts">
 import LightboxImage from '../components/LightboxImage.vue'
+import Mitosis from '../assets/img/mitosis/mitosis.jpg'
+import MitosisII from '../assets/img/mitosis/mitosis-ii.png'
+import Dropped from '../assets/img/mitosis/dropped.png'
+import Pollen from '../assets/img/mitosis/pollen.png'
+import Belong from '../assets/img/mitosis/belong.png'
+import BeachFossils from '../assets/img/mitosis/beach-fossils.png'
+import Commune from '../assets/img/mitosis/commune.png'
+import Cytoplasm from '../assets/img/mitosis/cytoplasm.png'
+import Egg from '../assets/img/mitosis/egg.png'
+import CytoplasmCity from '../assets/img/mitosis/cytoplasm-city.png'
 </script>
 
 <template>
   <div class="page-content">
     <div class="heading">Mitosis, 2022-2025</div>
     <div class="description">
-      It can be difficult to convet something that was initally a visual language into a written
+      It can be difficult to convert something that was initally a visual language into a written
       language. This series started as an abstract exploration, when shapes that looked like cells
       began to emerge. I named that first piece Mitosis, and the rest of the series came from the
       one, as one cell cleaves into two, and two become four, and so on. The complexity began to
@@ -18,48 +28,24 @@ import LightboxImage from '../components/LightboxImage.vue'
     <div class="lighbox-gallery">
       <div class="grid">
         <div class="col item">
+          <LightboxImage :image="Mitosis" caption="Mitosis, acrylic on cradled wood panel. 2022." />
+          <LightboxImage :image="MitosisII" caption="Mitosis II, acrylic on wood board. 2023." />
           <LightboxImage
-            img-ref="src/assets/img/mitosis/mitosis.jpg"
-            caption="Mitosis, acrylic on cradled wood panel. 2022."
-          />
-          <LightboxImage
-            img-ref="src/assets/img/mitosis/mitosis-ii.png"
-            caption="Mitosis II, acrylic on wood board. 2023."
-          />
-          <LightboxImage
-            img-ref="src/assets/img/mitosis/dropped.png"
+            :image="Dropped"
             caption="(Dropped my) jelly donut, acrylic on wood board. 2023."
           />
-          <LightboxImage
-            img-ref="src/assets/img/mitosis/pollen.png"
-            caption="Pollen, oil on wood board. 2024."
-          />
+          <LightboxImage :image="Pollen" caption="Pollen, oil on wood board. 2024." />
         </div>
         <div class="col item">
-          <LightboxImage
-            img-ref="src/assets/img/mitosis/belong.png"
-            caption="Belong?, oil on wood board. 2024."
-          />
-          <LightboxImage
-            img-ref="src/assets/img/mitosis/beach-fossils.png"
-            caption="Beach Fossils, oil on wood board. 2024."
-          />
-          <LightboxImage
-            img-ref="src/assets/img/mitosis/commune.png"
-            caption="Commune, acrylic on wood board. 2023."
-          />
-          <LightboxImage
-            img-ref="src/assets/img/mitosis/cytoplasm.png"
-            caption="Cytoplasm, acrylic on wood board. 2023."
-          />
+          <LightboxImage :image="Belong" caption="Belong?, oil on wood board. 2024." />
+          <LightboxImage :image="BeachFossils" caption="Beach Fossils, oil on wood board. 2024." />
+          <LightboxImage :image="Commune" caption="Commune, acrylic on wood board. 2023." />
+          <LightboxImage :image="Cytoplasm" caption="Cytoplasm, acrylic on wood board. 2023." />
         </div>
         <div class="col item">
+          <LightboxImage :image="Egg" caption="The Egg, acrylic and oil on wood board. 2025." />
           <LightboxImage
-            img-ref="src/assets/img/mitosis/egg.png"
-            caption="The Egg, acrylic and oil on wood board. 2025."
-          />
-          <LightboxImage
-            img-ref="src/assets/img/mitosis/cytoplasm-city.png"
+            :image="CytoplasmCity"
             caption="Cytoplasm City, acrylic on wood board. 2023."
           />
         </div>
