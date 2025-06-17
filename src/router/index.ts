@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import About from '../views/About.vue'
+import Abstract from '../views/Abstract.vue'
 import Fish from '../views/Fish.vue'
+import Highland from '../views/Highland.vue'
 import Mitosis from '../views/Mitosis.vue'
 import Paintings from '../views/Paintings.vue'
 
@@ -16,12 +18,12 @@ const router = createRouter({
     {
       path: '/about',
       name: 'about',
-      component: () => About,
+      component: About,
     },
     {
       path: '/abstract',
       name: 'Abstract',
-      component: () => import('../views/Abstract.vue'),
+      component: Abstract,
     },
     {
       path: '/fish',
@@ -31,7 +33,7 @@ const router = createRouter({
     {
       path: '/highland',
       name: 'Highland',
-      component: () => import('../views/Highland.vue'),
+      component: Highland,
     },
     {
       path: '/mitosis',
