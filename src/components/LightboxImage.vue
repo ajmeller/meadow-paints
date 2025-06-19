@@ -1,5 +1,7 @@
-<script setup lang="ts">
-import { ref, type Ref } from 'vue'
+<script setup lang="js">
+import { ref } from 'vue'
+import VLazyImage from 'v-lazy-image'
+import Placeholder from '../assets/img/background.png'
 
 defineProps({
   image: {
@@ -10,11 +12,17 @@ defineProps({
   alt: String,
 })
 
-const showLighbox: Ref<boolean> = ref(false)
+const showLighbox = ref(false)
 </script>
 
 <template>
-  <img class="grid-img" :src="image" :alt="alt" @click="showLighbox = true" />
+  <v-lazy-image
+    class="grid-img"
+    :src="image"
+    :alt="alt"
+    @click="showLighbox = true"
+    :src-placeholder="Placeholder"
+  />
 
   <Teleport to="body">
     <Transition name="modal">

@@ -7,9 +7,19 @@ body {
   margin: 20px;
   height: 100%;
 
+  .page-content {
+    margin: 0px 20px;
+  }
+
   .side-by-side {
     display: flex;
-    gap: 32px;
+    gap: 20px;
+  }
+
+  button.up {
+    position: sticky;
+    bottom: 12px;
+    float: right;
   }
 
   .heading {
