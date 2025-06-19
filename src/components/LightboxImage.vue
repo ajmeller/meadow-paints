@@ -30,7 +30,7 @@ const showLighbox = ref(false)
             <button @click="showLighbox = false" class="close-btn">
               <span class="material-icons">close</span>
             </button>
-            <div class="lightbox-img"><img :src="image" alt="" /></div>
+            <div class="lightbox-img"><img v-lazy="image" :alt="alt" /></div>
           </div>
           <div v-if="caption" class="caption">{{ caption }}</div>
         </div>
