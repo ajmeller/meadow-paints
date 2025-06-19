@@ -1,6 +1,5 @@
-<script setup lang="js">
+<script setup lang="ts">
 import { ref } from 'vue'
-import VLazyImage from 'v-lazy-image'
 import Placeholder from '../assets/img/background.png'
 
 defineProps({
@@ -16,12 +15,11 @@ const showLighbox = ref(false)
 </script>
 
 <template>
-  <v-lazy-image
+  <img
     class="grid-img"
-    :src="image"
+    v-lazy="{ src: image, loading: Placeholder }"
     :alt="alt"
     @click="showLighbox = true"
-    :src-placeholder="Placeholder"
   />
 
   <Teleport to="body">
