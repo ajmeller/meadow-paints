@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="right">
-      <img src="../assets/img/me.png" />
+      <img v-lazy="'../assets/img/me.png'" />
     </div>
   </div>
 </template>

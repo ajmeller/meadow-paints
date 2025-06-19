@@ -12,7 +12,7 @@ import Logperch4 from '../assets/img/logperch/logperch4.png'
     <div class="lighbox-gallery">
       <img
         class="big-img"
-        src="../assets/img/logperch/logperch.png"
+        v-lazy="'../assets/img/logperch/logperch.png'"
         alt="Painting of a logperch attached to 6th st. bridge in Grand Rapids, MI"
       />
       <div class="grid">
