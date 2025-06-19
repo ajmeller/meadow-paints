@@ -3,6 +3,7 @@ import LightboxImage from '../components/LightboxImage.vue'
 import Logperch2 from '../assets/img/logperch/logperch2.png'
 import Logperch3 from '../assets/img/logperch/logperch3.png'
 import Logperch4 from '../assets/img/logperch/logperch4.png'
+import Logperch from '../assets/img/logperch/logperch.png'
 </script>
 
 <template>
@@ -12,7 +13,7 @@ import Logperch4 from '../assets/img/logperch/logperch4.png'
     <div class="lighbox-gallery">
       <img
         class="big-img"
-        v-lazy="'../assets/img/logperch/logperch.png'"
+        v-lazy="Logperch"
         alt="Painting of a logperch attached to 6th st. bridge in Grand Rapids, MI"
       />
       <div class="grid">

@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import Me from '../assets/img/me.png'
+</script>
+
 <template>
   <div class="page-content">
     <div class="left">
@@ -12,7 +16,7 @@
       </div>
     </div>
     <div class="right">
-      <img v-lazy="'../assets/img/me.png'" />
+      <img v-lazy="Me" alt="Photo of Meadow" />
     </div>
   </div>
 </template>
