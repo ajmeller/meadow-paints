@@ -5,14 +5,21 @@ import Remus from '../assets/img/remus.png'
 import Sunset from '../assets/img/sunset-in-candy.png'
 import Hi from '../assets/img/hi.jpg'
 import Tree from '../assets/img/tree.png'
+import IndoorFish from '../assets/img/indoor-fish.jpg'
+import dave from '../assets/img/dave.jpg'
 </script>
 
 <template>
   <div class="page-content">
-    <div class="heading">Other Work, 2020-2025</div>
+    <div class="heading">Paintings, 2020-2025</div>
     <div class="lighbox-gallery">
       <div class="grid">
         <div class="col item">
+          <LightboxImage
+            :image="IndoorFish"
+            caption="Indoor Fish, oil on wood board. 2025."
+            alt="Painting of banded killifish"
+          />
           <LightboxImage
             :image="Sylvan"
             caption="Sylvan, acrylic on wood board in handbuilt frame. 2022."
@@ -32,8 +39,13 @@ import Tree from '../assets/img/tree.png'
           />
           <LightboxImage
             :image="Hi"
-            alt="Painting of a two capybaras in a grassy landscape in cool colors"
+            alt="Painting of two capybaras in a grassy landscape in cool colors"
             caption="hi, acrylic on wood board. 2022."
+          />
+          <LightboxImage
+            :image="dave"
+            alt="Painting of a cat"
+            caption="DAVE, oil on wood board. 2025."
           />
         </div>
         <div class="col item">

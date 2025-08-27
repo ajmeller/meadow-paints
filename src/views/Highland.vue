@@ -1,10 +1,14 @@
 <script setup lang="ts">
 import LightboxImage from '../components/LightboxImage.vue'
 import Chippy from '../assets/img/posts/chippy.png'
+import Chippy2 from '../assets/img/posts/chippy2.jpg'
+import BES from '../assets/img/posts/bes.jpg'
 import Goldenrod2 from '../assets/img/posts/goldenrod2.png'
 import Asters from '../assets/img/posts/asters.jpg'
 import Monarchs from '../assets/img/posts/monarchs.png'
+import Monarchs2 from '../assets/img/posts/monarchs2.jpg'
 import Toads from '../assets/img/posts/toads.jpg'
+import Toads2 from '../assets/img/posts/toads2.jpg'
 import All2 from '../assets/img/posts/all2.jpg'
 import WhiteRot from '../assets/img/posts/white-rot.jpg'
 import Mycellium from '../assets/img/posts/mycellium.png'
@@ -14,8 +18,15 @@ import All from '../assets/img/posts/all.jpg'
 import Cottonwood from '../assets/img/posts/cottonwood.png'
 import Bluejays from '../assets/img/posts/bluejays.png'
 import Milkweed from '../assets/img/posts/milkweed.png'
+import Milkweed2 from '../assets/img/posts/milkweed2.jpg'
 import Goldenrod from '../assets/img/posts/goldenrod.png'
 import Cardinals from '../assets/img/posts/cardinals.jpg'
+import Cardinals2 from '../assets/img/posts/cardinals2.jpg'
+import Cardinals3 from '../assets/img/posts/cardinals3.jpg'
+import Rabbits from '../assets/img/posts/rabbits.jpg'
+import River from '../assets/img/posts/river.jpg'
+import Sparrows from '../assets/img/posts/sparrows.jpg'
+import Squirrels from '../assets/img/posts/squirrels.jpg'
 </script>
 
 <template>
@@ -35,14 +46,22 @@ import Cardinals from '../assets/img/posts/cardinals.jpg'
           <LightboxImage :image="Goldenrod2" />
           <LightboxImage :image="Asters" />
           <LightboxImage :image="Monarchs" />
+          <LightboxImage :image="Conehead" />
           <LightboxImage :image="Toads" />
+          <LightboxImage :image="River" />
+          <LightboxImage :image="Chippy2" />
+          <LightboxImage :image="Cardinals2" />
         </div>
         <div class="col item">
           <LightboxImage :image="All2" />
           <LightboxImage :image="WhiteRot" />
           <LightboxImage :image="Mycellium" />
           <LightboxImage :image="Gigi" />
-          <LightboxImage :image="Conehead" />
+          <LightboxImage :image="BES" />
+          <LightboxImage :image="Cardinals" />
+          <LightboxImage :image="Milkweed2" />
+          <LightboxImage :image="Rabbits" />
+          <LightboxImage :image="Toads2" />
         </div>
         <div class="col item">
           <LightboxImage :image="All" />
@@ -50,7 +69,10 @@ import Cardinals from '../assets/img/posts/cardinals.jpg'
           <LightboxImage :image="Bluejays" />
           <LightboxImage :image="Milkweed" />
           <LightboxImage :image="Goldenrod" />
-          <LightboxImage :image="Cardinals" />
+          <LightboxImage :image="Monarchs2" />
+          <LightboxImage :image="Squirrels" />
+          <LightboxImage :image="Sparrows" />
+          <LightboxImage :image="Cardinals3" />
         </div>
       </div>
     </div>

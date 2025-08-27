@@ -2,10 +2,10 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import About from '../views/About.vue'
 import Abstract from '../views/Abstract.vue'
-import Fish from '../views/Fish.vue'
 import Highland from '../views/Highland.vue'
 import Mitosis from '../views/Mitosis.vue'
 import Paintings from '../views/Paintings.vue'
+import MiniMurals from '../views/MiniMurals.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,9 +26,9 @@ const router = createRouter({
       component: Abstract,
     },
     {
-      path: '/fish',
-      name: 'Fish',
-      component: Fish,
+      path: '/mini-murals',
+      name: 'Mini Murals',
+      component: MiniMurals,
     },
     {
       path: '/highland',

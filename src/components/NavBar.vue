@@ -32,20 +32,20 @@ const contactOpen: Ref<boolean> = ref(false)
             <li>
               <RouterLink to="/mitosis">Mitosis</RouterLink>
             </li>
+            <li><RouterLink to="/paintings">Paintings</RouterLink></li>
             <li><RouterLink to="/abstract">Abstract Work</RouterLink></li>
-            <li><RouterLink to="/paintings">Other Work</RouterLink></li>
           </ul>
         </div>
         <div class="accordion-item">
           <div class="accordion-header" role="tab">
             <button class="accordion-button" type="button" @click="muralsOpen = !muralsOpen">
-              Murals
+              Public Art
               <span class="material-icons">{{ muralsOpen ? 'expand_less' : 'expand_more' }}</span>
             </button>
           </div>
           <ul class="accordion-body" role="tabpanel" v-if="muralsOpen">
             <li><RouterLink to="/highland">Park People</RouterLink></li>
-            <li><RouterLink to="/fish">Mini Fish</RouterLink></li>
+            <li><RouterLink to="/mini-murals">Mini Murals</RouterLink></li>
           </ul>
         </div>
         <div class="accordion-item">
@@ -122,7 +122,7 @@ img.ig {
 }
 
 .accordion {
-  min-width: 180px;
+  min-width: 220px;
 }
 
 .accordion-button {
