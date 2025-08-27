@@ -7,8 +7,8 @@
       <img src="../assets/img/pp/logperch_cropped.png" class="absolute logperch" />
       <img src="../assets/img/abstract/sams-fire.png" class="absolute sam" />
       <img src="../assets/img/mitosis/dropped.png" class="absolute dropped" />
-      <img src="../assets/img/indoor-fish.JPG" class="absolute fish" />
-      <img src="../assets/img/pp/dunes-mural.JPG" class="absolute dunes" />
+      <img src="../assets/img/indoor-fish.jpg" class="absolute fish" />
+      <img src="../assets/img/pp/dunes-mural.jpg" class="absolute dunes" />
     </section>
   </main>
 </template>

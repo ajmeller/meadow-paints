@@ -5,10 +5,10 @@ import Logperch3 from '../assets/img/pp/logperch3.png'
 import Logperch4 from '../assets/img/pp/logperch4.png'
 import Logperch from '../assets/img/pp/logperch.png'
 import Orchid from '../assets/img/pp/fringed-orchid.jpg'
-import Orchid2 from '../assets/img/pp/fringed-orchid2.JPG'
-import Orchid3 from '../assets/img/pp/fringed-orchid3.JPG'
-import Dunes from '../assets/img/pp/dunes-mural.JPG'
-import Dunes2 from '../assets/img/pp/dunes-mural2.JPG'
+import Orchid2 from '../assets/img/pp/fringed-orchid2.jpg'
+import Orchid3 from '../assets/img/pp/fringed-orchid3.jpg'
+import Dunes from '../assets/img/pp/dunes-mural.jpg'
+import Dunes2 from '../assets/img/pp/dunes-mural2.jpg'
 </script>
 
 <template>

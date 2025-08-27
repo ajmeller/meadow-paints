@@ -20,7 +20,7 @@ import IceCave from '../assets/img/abstract/ice-cave.png'
 import Snoozin from '../assets/img/abstract/snoozin.jpg'
 import Blush from '../assets/img/abstract/blush.png'
 import MariposaI from '../assets/img/abstract/Mariposa_I.png'
-import Tidepool from '../assets/img/abstract/tidepool.JPG'
+import Tidepool from '../assets/img/abstract/tidepool.jpg'
 </script>
 
 <template>

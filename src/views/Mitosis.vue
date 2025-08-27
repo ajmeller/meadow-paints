@@ -8,7 +8,7 @@ import Belong from '../assets/img/mitosis/belong.png'
 import BeachFossils from '../assets/img/mitosis/beach-fossils.png'
 import Commune from '../assets/img/mitosis/commune.png'
 import Cytoplasm from '../assets/img/mitosis/cytoplasm.png'
-import Egg from '../assets/img/mitosis/egg.JPG'
+import Egg from '../assets/img/mitosis/egg.jpg'
 import CytoplasmCity from '../assets/img/mitosis/cytoplasm-city.png'
 </script>
 

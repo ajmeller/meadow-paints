@@ -25,8 +25,8 @@ import Cardinals2 from '../assets/img/posts/cardinals2.jpg'
 import Cardinals3 from '../assets/img/posts/cardinals3.jpg'
 import Rabbits from '../assets/img/posts/rabbits.jpg'
 import River from '../assets/img/posts/river.jpg'
-import Sparrows from '../assets/img/posts/sparrows.JPG'
-import Squirrels from '../assets/img/posts/squirrels.JPG'
+import Sparrows from '../assets/img/posts/sparrows.jpg'
+import Squirrels from '../assets/img/posts/squirrels.jpg'
 </script>
 
 <template>

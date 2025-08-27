@@ -5,7 +5,7 @@ import Remus from '../assets/img/remus.png'
 import Sunset from '../assets/img/sunset-in-candy.png'
 import Hi from '../assets/img/hi.jpg'
 import Tree from '../assets/img/tree.png'
-import IndoorFish from '../assets/img/indoor-fish.JPG'
+import IndoorFish from '../assets/img/indoor-fish.jpg'
 import dave from '../assets/img/dave.jpg'
 </script>
 
