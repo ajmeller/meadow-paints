@@ -21,6 +21,7 @@ import Snoozin from '../assets/img/abstract/snoozin.jpg'
 import Blush from '../assets/img/abstract/blush.png'
 import MariposaI from '../assets/img/abstract/Mariposa_I.png'
 import Tidepool from '../assets/img/abstract/tidepool.jpg'
+import DogDays from '../assets/img/abstract/dog-days.jpg'
 </script>
 
 <template>
@@ -31,8 +32,10 @@ import Tidepool from '../assets/img/abstract/tidepool.jpg'
         <div class="col item">
           <LightboxImage :image="Tidepool" caption="Tidepool, oil on wood panel. 2025." />
           <LightboxImage :image="Earth" caption="Earth, acrylic on 4x4 wood panel. 2023." />
-          <LightboxImage :image="Sensitive" caption="Sensitive, digital painting. 2023." />
+          <LightboxImage :image="Sensitive" caption="In the neon surf, digital painting. 2023." />
           <LightboxImage :image="Iris" caption="Iris, digital painting. 2021." />
+          <LightboxImage :image="DogDays" caption="Dog days of fall, acrylic painting. 2022." />
+
           <LightboxImage
             :image="PBW"
             caption="Pancake Boy World, acrylic on 4x4 wood panel. 2022."
@@ -50,13 +53,14 @@ import Tidepool from '../assets/img/abstract/tidepool.jpg'
           <LightboxImage :image="Rule" caption="I made a rule, acrylic on 4x4 wood panel. 2022." />
           <LightboxImage :image="InKnots" caption="In Knots, acrylic on wood board. 2022." />
           <LightboxImage :image="AllOver" caption="All Over, digital painting. 2020." />
+          <LightboxImage :image="MariposaI" caption="Mariposa I, digital painting. 2020" />
         </div>
         <div class="col item">
           <LightboxImage
             :image="Been"
             caption="Been hearing my name be called, been far from home. Digital painting. 2021."
           />
-          <LightboxImage :image="Doing" caption="Doin' it all wrong, digital painting. 2023." />
+          <LightboxImage :image="Doing" caption="Lotus eater, digital painting. 2023." />
 
           <LightboxImage :image="NiceWay" caption="Nice way about ya, oil on wood panel. 2025." />
           <LightboxImage
@@ -66,7 +70,6 @@ import Tidepool from '../assets/img/abstract/tidepool.jpg'
           <LightboxImage :image="IceCave" caption="Ice Cave, digital painting. 2022." />
           <LightboxImage :image="Snoozin" caption="Snoozin', acrylic on 4x4 canvas. 2019." />
           <LightboxImage :image="Blush" caption="Blush, digital painting. 2022." />
-          <LightboxImage :image="MariposaI" caption="Mariposa I, digital painting. 2020" />
         </div>
       </div>
     </div>

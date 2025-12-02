@@ -7,6 +7,7 @@ import Hi from '../assets/img/hi.jpg'
 import Tree from '../assets/img/tree.png'
 import IndoorFish from '../assets/img/indoor-fish.jpg'
 import dave from '../assets/img/dave.jpg'
+import Gibby from '../assets/img/gibby.jpg'
 </script>
 
 <template>
@@ -26,9 +27,9 @@ import dave from '../assets/img/dave.jpg'
             alt="Painting of coast in Marquette, MI"
           />
           <LightboxImage
-            :image="Remus"
-            alt="Painting of a cat in monochromatic pink"
-            caption="Remus, oil on wood board. 2025."
+            :image="dave"
+            alt="Painting of a cat"
+            caption="DAVE, oil on wood board. 2025."
           />
         </div>
         <div class="col item">
@@ -43,13 +44,18 @@ import dave from '../assets/img/dave.jpg'
             caption="hi, acrylic on wood board. 2022."
           />
           <LightboxImage
-            :image="dave"
-            alt="Painting of a cat"
-            caption="DAVE, oil on wood board. 2025."
+            :image="Remus"
+            alt="Painting of a cat in monochromatic pink"
+            caption="Remus, oil on wood board. 2025."
           />
         </div>
         <div class="col item">
           <LightboxImage :image="Tree" alt="Digital painting of a tree with multi-color gradient" />
+          <LightboxImage
+            :image="Gibby"
+            alt="Painting of a bleping cat in monochromatic pink"
+            caption="Gibby, oil on wood board. 2025."
+          />
         </div>
       </div>
     </div>

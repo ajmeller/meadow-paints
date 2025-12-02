@@ -7,6 +7,10 @@ const menuOpen: Ref<boolean> = ref(false)
 const paintingOpen: Ref<boolean> = ref(false)
 const muralsOpen: Ref<boolean> = ref(false)
 const contactOpen: Ref<boolean> = ref(false)
+
+function copyText() {
+  navigator.clipboard.writeText('meadowpaintsart@gmail.com')
+}
 </script>
 
 <template>
@@ -45,7 +49,7 @@ const contactOpen: Ref<boolean> = ref(false)
           </div>
           <ul class="accordion-body" role="tabpanel" v-if="muralsOpen">
             <li><RouterLink to="/highland">Park People</RouterLink></li>
-            <li><RouterLink to="/mini-murals">Mini Murals</RouterLink></li>
+            <li><RouterLink to="/murals">Murals</RouterLink></li>
           </ul>
         </div>
         <div class="accordion-item">
@@ -56,7 +60,20 @@ const contactOpen: Ref<boolean> = ref(false)
             </button>
           </div>
           <div class="accordion-body form" role="tabpanel" v-if="contactOpen">
-            <div class="msg">Please email me directly at meller.alyssa@gmail.com</div>
+            <div class="msg">
+              Please email me directly at
+              <span class="align"
+                >meadowpaintsart@gmail.com
+                <button
+                  class="icon-btn"
+                  type="button"
+                  @click="copyText()"
+                  title="Copy to clipboard"
+                >
+                  <span class="material-icons">content_copy</span>
+                </button>
+              </span>
+            </div>
             <!-- <form method="post">
               <div>
                 <input
@@ -125,6 +142,19 @@ img.ig {
   min-width: 220px;
 }
 
+.icon-btn {
+  font-size: 20px;
+  border-style: none;
+  background: none;
+  cursor: pointer;
+  color: #463d3d;
+  padding: 0px;
+}
+
+.icon-btn:hover {
+  color: #a17c6d;
+}
+
 .accordion-button {
   font-family: Gaegu, sans-serif;
   font-size: 28px;
@@ -163,6 +193,12 @@ ul {
 .msg {
   margin-bottom: 8px;
   font-size: 14px;
+}
+
+.align {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 @media (max-width: 1040px) {

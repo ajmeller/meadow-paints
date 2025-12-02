@@ -26,8 +26,8 @@ const router = createRouter({
       component: Abstract,
     },
     {
-      path: '/mini-murals',
-      name: 'Mini Murals',
+      path: '/murals',
+      name: 'Murals',
       component: MiniMurals,
     },
     {
