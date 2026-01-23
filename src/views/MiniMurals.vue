@@ -9,6 +9,7 @@ import Orchid2 from '../assets/img/pp/fringed-orchid2.jpg'
 import Orchid3 from '../assets/img/pp/fringed-orchid3.jpg'
 import Dunes from '../assets/img/pp/dunes-mural.jpg'
 import Dunes2 from '../assets/img/pp/dunes-mural2.jpg'
+import Me from '../assets/img/pp/pp-me.jpg'
 </script>
 
 <template>
@@ -29,7 +30,7 @@ import Dunes2 from '../assets/img/pp/dunes-mural2.jpg'
       </div>
       <div class="dunes-img">
         <LightboxImage
-          :image="Dunes2"
+          :image="Me"
           alt="Painting of Lake Michigan dunes at sunset with a pitcher's thistle and monarch in the foreground."
         />
       </div>
@@ -53,7 +54,7 @@ import Dunes2 from '../assets/img/pp/dunes-mural2.jpg'
     <div class="description">
       For the 2024 pleasant peninsula festival, 50 different artists painted 50 species of fish that
       are native to the Grand River. My species was the logperch. Learn more and see the others
-      <a href="https://www.pleasantpeninsula.org/2024">here</a>!
+      <a href="https://www.pleasantpeninsula.org/2024" target="_blank">here</a>!
     </div>
     <div class="lighbox-gallery">
       <img
@@ -78,7 +79,7 @@ import Dunes2 from '../assets/img/pp/dunes-mural2.jpg'
     <div class="description">
       In 2025, 100 artists painted 50 pollinators and 50 flowers native to Michigan. My species was
       the purple fringed orchid. Learn more and see the others
-      <a href="https://www.pleasantpeninsula.org/2025">here</a>!
+      <a href="https://www.pleasantpeninsula.org/2025fest" target="_blank">here</a>!
     </div>
     <div class="lighbox-gallery">
       <div class="grid">

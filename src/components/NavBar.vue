@@ -43,13 +43,13 @@ function copyText() {
         <div class="accordion-item">
           <div class="accordion-header" role="tab">
             <button class="accordion-button" type="button" @click="muralsOpen = !muralsOpen">
-              Public Art
+              Murals
               <span class="material-icons">{{ muralsOpen ? 'expand_less' : 'expand_more' }}</span>
             </button>
           </div>
           <ul class="accordion-body" role="tabpanel" v-if="muralsOpen">
             <li><RouterLink to="/highland">Park People</RouterLink></li>
-            <li><RouterLink to="/murals">Murals</RouterLink></li>
+            <li><RouterLink to="/murals">Pleasant Peninsula</RouterLink></li>
           </ul>
         </div>
         <div class="accordion-item">

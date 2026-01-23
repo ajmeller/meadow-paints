@@ -22,6 +22,8 @@ import Blush from '../assets/img/abstract/blush.png'
 import MariposaI from '../assets/img/abstract/Mariposa_I.png'
 import Tidepool from '../assets/img/abstract/tidepool.jpg'
 import DogDays from '../assets/img/abstract/dog-days.jpg'
+import ColdToes from '../assets/img/abstract/cold-toes.png'
+import Everything from '../assets/img/abstract/everything.png'
 </script>
 
 <template>
@@ -31,6 +33,10 @@ import DogDays from '../assets/img/abstract/dog-days.jpg'
       <div class="grid">
         <div class="col item">
           <LightboxImage :image="Tidepool" caption="Tidepool, oil on wood panel. 2025." />
+          <LightboxImage
+            :image="Everything"
+            caption="Everything is everything, acrylic on wood panel. 2025."
+          />
           <LightboxImage :image="Earth" caption="Earth, acrylic on 4x4 wood panel. 2023." />
           <LightboxImage :image="Sensitive" caption="In the neon surf, digital painting. 2023." />
           <LightboxImage :image="Iris" caption="Iris, digital painting. 2021." />
@@ -50,6 +56,7 @@ import DogDays from '../assets/img/abstract/dog-days.jpg'
             :image="BigBright"
             caption="Big Bright!, acrylic on 4x4 wood panel. 2022."
           />
+          <LightboxImage :image="ColdToes" caption="Cold Toes. Digital painting. 2026." />
           <LightboxImage :image="Rule" caption="I made a rule, acrylic on 4x4 wood panel. 2022." />
           <LightboxImage :image="InKnots" caption="In Knots, acrylic on wood board. 2022." />
           <LightboxImage :image="AllOver" caption="All Over, digital painting. 2020." />

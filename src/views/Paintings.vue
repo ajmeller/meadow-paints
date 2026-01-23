@@ -8,11 +8,12 @@ import Tree from '../assets/img/tree.png'
 import IndoorFish from '../assets/img/indoor-fish.jpg'
 import dave from '../assets/img/dave.jpg'
 import Gibby from '../assets/img/gibby.jpg'
+import LeafFallDay from '../assets/img/leaf-fall-day.png'
 </script>
 
 <template>
   <div class="page-content">
-    <div class="heading">Paintings, 2020-2025</div>
+    <div class="heading">Paintings, 2020-Present</div>
     <div class="lighbox-gallery">
       <div class="grid">
         <div class="col item">
@@ -21,6 +22,7 @@ import Gibby from '../assets/img/gibby.jpg'
             caption="Indoor Fish, oil on wood board. 2025."
             alt="Painting of banded killifish"
           />
+          <LightboxImage :image="LeafFallDay" caption="Leaf Fall Day, digital painting. 2026." />
           <LightboxImage
             :image="Sylvan"
             caption="Sylvan, acrylic on wood board in handbuilt frame. 2022."
