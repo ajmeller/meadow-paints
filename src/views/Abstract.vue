@@ -23,7 +23,7 @@ import MariposaI from '../assets/img/abstract/Mariposa_I.png'
 import Tidepool from '../assets/img/abstract/tidepool.jpg'
 import DogDays from '../assets/img/abstract/dog-days.jpg'
 import ColdToes from '../assets/img/abstract/cold-toes.png'
-import Everything from '../assets/img/abstract/everything.png'
+import Everything from '../assets/img/abstract/Everything.jpg'
 </script>
 
 <template>

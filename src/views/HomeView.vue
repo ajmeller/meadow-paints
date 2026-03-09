@@ -3,7 +3,7 @@
     <section class="portfolio-block">
       <div class="heading absolute">Meadow Paints</div>
       <img src="../assets/img/posts/chippy.png" class="absolute chippy" />
-      <img src="../assets/img/mitosis/belong.png" class="absolute belong" />
+      <img src="../assets/img/mitosis/Belong.jpg" class="absolute belong" />
       <img src="../assets/img/pp/logperch_cropped.png" class="absolute logperch" />
       <img src="../assets/img/abstract/sams-fire.png" class="absolute sam" />
       <img src="../assets/img/mitosis/dropped.png" class="absolute dropped" />

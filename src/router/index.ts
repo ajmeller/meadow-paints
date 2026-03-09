@@ -2,10 +2,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import About from '../views/About.vue'
 import Abstract from '../views/Abstract.vue'
-import Highland from '../views/Highland.vue'
+import Highland from '../views/murals/Highland.vue'
 import Mitosis from '../views/Mitosis.vue'
 import Paintings from '../views/Paintings.vue'
-import MiniMurals from '../views/MiniMurals.vue'
+import MiniMurals from '../views/murals/MiniMurals.vue'
+import Murals from '../views/murals/Murals.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,9 +27,14 @@ const router = createRouter({
       component: Abstract,
     },
     {
+      path: '/pleasant-peninsula',
+      name: 'Pleasant Peninsula',
+      component: MiniMurals,
+    },
+    {
       path: '/murals',
       name: 'Murals',
-      component: MiniMurals,
+      component: Murals,
     },
     {
       path: '/highland',

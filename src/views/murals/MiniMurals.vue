@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import LightboxImage from '../components/LightboxImage.vue'
-import Logperch2 from '../assets/img/pp/logperch2.png'
-import Logperch3 from '../assets/img/pp/logperch3.png'
-import Logperch4 from '../assets/img/pp/logperch4.png'
-import Logperch from '../assets/img/pp/logperch.png'
-import Orchid from '../assets/img/pp/fringed-orchid.jpg'
-import Orchid2 from '../assets/img/pp/fringed-orchid2.jpg'
-import Orchid3 from '../assets/img/pp/fringed-orchid3.jpg'
-import Dunes from '../assets/img/pp/dunes-mural.jpg'
-import Dunes2 from '../assets/img/pp/dunes-mural2.jpg'
-import Me from '../assets/img/pp/pp-me.jpg'
+import LightboxImage from '../../components/LightboxImage.vue'
+import Logperch2 from '../../assets/img/pp/logperch2.png'
+import Logperch3 from '../../assets/img/pp/logperch3.png'
+import Logperch4 from '../../assets/img/pp/logperch4.png'
+import Logperch from '../../assets/img/pp/logperch.png'
+import Orchid from '../../assets/img/pp/fringed-orchid.jpg'
+import Orchid2 from '../../assets/img/pp/fringed-orchid2.jpg'
+import Orchid3 from '../../assets/img/pp/fringed-orchid3.jpg'
+import Dunes from '../../assets/img/pp/dunes-mural.jpg'
+import Dunes2 from '../../assets/img/pp/dunes-mural2.jpg'
+import Me from '../../assets/img/pp/pp-me.jpg'
 </script>
 
 <template>
@@ -21,18 +21,20 @@ import Me from '../assets/img/pp/pp-me.jpg'
       I completed a 4' x 4' mural on the Great Lakes dune ecosystem, which was displayed on the day
       of the festival.
     </div>
-    <div class="dunes">
-      <div class="dunes-img">
-        <LightboxImage
-          :image="Dunes"
-          alt="Painting of Lake Michigan dunes at sunset with a pitcher's thistle and monarch in the foreground."
-        />
-      </div>
-      <div class="dunes-img">
-        <LightboxImage
-          :image="Me"
-          alt="Painting of Lake Michigan dunes at sunset with a pitcher's thistle and monarch in the foreground."
-        />
+    <div class="lighbox-gallery">
+      <div class="two-img">
+        <div>
+          <LightboxImage
+            :image="Dunes"
+            alt="Painting of Lake Michigan dunes at sunset with a pitcher's thistle and monarch in the foreground."
+          />
+        </div>
+        <div>
+          <LightboxImage
+            :image="Dunes2"
+            alt="Painting of Lake Michigan dunes at sunset with a pitcher's thistle and monarch in the foreground."
+          />
+        </div>
       </div>
     </div>
     <div class="extra-description">
@@ -105,17 +107,5 @@ import Me from '../assets/img/pp/pp-me.jpg'
 .grid,
 .extra-description {
   margin-bottom: 60px;
-}
-
-.dunes {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-bottom: 20px;
-}
-
-.dunes-img > img {
-  width: 100%;
-  cursor: pointer;
 }
 </style>

@@ -49,7 +49,8 @@ function copyText() {
           </div>
           <ul class="accordion-body" role="tabpanel" v-if="muralsOpen">
             <li><RouterLink to="/highland">Park People</RouterLink></li>
-            <li><RouterLink to="/murals">Pleasant Peninsula</RouterLink></li>
+            <li><RouterLink to="/pleasant-peninsula">Pleasant Peninsula</RouterLink></li>
+            <li><RouterLink to="/murals">Murals</RouterLink></li>
           </ul>
         </div>
         <div class="accordion-item">
@@ -111,7 +112,10 @@ function copyText() {
         <div class="accordion-button">
           <RouterLink to="/about">About</RouterLink>
         </div>
-        <div>
+        <div class="icons">
+          <a href="https://tumblr.com/meadowpaints" target="_blank">
+            <img src="..\assets\img\tumblr_logo.png" class="tumblr" />
+          </a>
           <a href="https://instagram.com/meadowpaints" target="_blank">
             <img src="..\assets\img\instagram.svg" class="ig" />
           </a>
@@ -132,10 +136,20 @@ img.logo {
   width: 100px;
 }
 
+.icons {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 img.ig {
   width: 36px;
   color: #463d3d;
-  margin-top: 8px;
+}
+
+img.tumblr {
+  width: 12px;
 }
 
 .accordion {

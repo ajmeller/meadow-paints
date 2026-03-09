@@ -8,7 +8,7 @@ import Tree from '../assets/img/tree.png'
 import IndoorFish from '../assets/img/indoor-fish.jpg'
 import dave from '../assets/img/dave.jpg'
 import Gibby from '../assets/img/gibby.jpg'
-import LeafFallDay from '../assets/img/leaf-fall-day.png'
+import LeafFallDay from '../assets/img/Leaf_Fall_Day.jpg'
 </script>
 
 <template>
