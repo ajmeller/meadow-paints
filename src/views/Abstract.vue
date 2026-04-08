@@ -21,7 +21,6 @@ import Snoozin from '../assets/img/abstract/snoozin.jpg'
 import Blush from '../assets/img/abstract/blush.png'
 import MariposaI from '../assets/img/abstract/Mariposa_I.png'
 import Tidepool from '../assets/img/abstract/tidepool.jpg'
-import DogDays from '../assets/img/abstract/dog-days.jpg'
 import ColdToes from '../assets/img/abstract/cold-toes.png'
 import Everything from '../assets/img/abstract/Everything.jpg'
 </script>
@@ -40,7 +39,6 @@ import Everything from '../assets/img/abstract/Everything.jpg'
           <LightboxImage :image="Earth" caption="Earth, acrylic on 4x4 wood panel. 2023." />
           <LightboxImage :image="Sensitive" caption="In the neon surf, digital painting. 2023." />
           <LightboxImage :image="Iris" caption="Iris, digital painting. 2021." />
-          <LightboxImage :image="DogDays" caption="Dog days of fall, acrylic painting. 2022." />
 
           <LightboxImage
             :image="PBW"

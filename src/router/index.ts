@@ -7,6 +7,7 @@ import Mitosis from '../views/Mitosis.vue'
 import Paintings from '../views/Paintings.vue'
 import MiniMurals from '../views/murals/MiniMurals.vue'
 import Murals from '../views/murals/Murals.vue'
+import Available from '../views/Available.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -50,6 +51,11 @@ const router = createRouter({
       path: '/paintings',
       name: 'Paintings',
       component: Paintings,
+    },
+    {
+      path: '/available',
+      name: 'Available',
+      component: Available,
     },
   ],
 })

@@ -53,6 +53,7 @@ function copyText() {
             <li><RouterLink to="/murals">Murals</RouterLink></li>
           </ul>
         </div>
+
         <div class="accordion-item">
           <div class="accordion-header" role="tab">
             <button class="accordion-button" type="button" @click="contactOpen = !contactOpen">
@@ -112,6 +113,9 @@ function copyText() {
         <div class="accordion-button">
           <RouterLink to="/about">About</RouterLink>
         </div>
+        <div class="accordion-button">
+          <RouterLink to="/available">Available Work</RouterLink>
+        </div>
         <div class="icons">
           <a href="https://tumblr.com/meadowpaints" target="_blank">
             <img src="..\assets\img\tumblr_logo.png" class="tumblr" />
@@ -140,16 +144,19 @@ img.logo {
   margin-top: 8px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
+  height: fit-content;
 }
 
 img.ig {
   width: 36px;
+  height: 36px;
   color: #463d3d;
 }
 
 img.tumblr {
   width: 12px;
+  color: #463d3d;
 }
 
 .accordion {
@@ -225,12 +232,12 @@ ul {
 
   .accordion {
     display: flex;
-    gap: 16px;
+    flex-wrap: wrap;
+    column-gap: 28px;
   }
 
-  img.ig {
+  .icons {
     margin-top: 12px;
-    margin-left: 8px;
   }
 }
 
