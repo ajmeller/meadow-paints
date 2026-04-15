@@ -119,9 +119,6 @@ function copyText() {
         </div>
 
         <div class="icons">
-          <a href="https://tumblr.com/meadowpaints" target="_blank">
-            <img src="..\assets\img\tumblr_logo.png" class="tumblr" />
-          </a>
           <a href="https://instagram.com/meadowpaints" target="_blank">
             <img src="..\assets\img\instagram.svg" class="ig" />
           </a>
@@ -153,11 +150,6 @@ img.logo {
 img.ig {
   width: 36px;
   height: 36px;
-  color: #463d3d;
-}
-
-img.tumblr {
-  width: 12px;
   color: #463d3d;
 }
 
