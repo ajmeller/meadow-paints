@@ -36,24 +36,31 @@ function copyText() {
             <li>
               <RouterLink to="/mitosis">Mitosis</RouterLink>
             </li>
-            <li><RouterLink to="/paintings">Paintings</RouterLink></li>
-            <li><RouterLink to="/abstract">Abstract Work</RouterLink></li>
+            <li><RouterLink to="/murals">Murals</RouterLink></li>
+            <li><RouterLink to="/paintings">All Paintings</RouterLink></li>
           </ul>
         </div>
         <div class="accordion-item">
           <div class="accordion-header" role="tab">
             <button class="accordion-button" type="button" @click="muralsOpen = !muralsOpen">
-              Murals
+              Public Art
               <span class="material-icons">{{ muralsOpen ? 'expand_less' : 'expand_more' }}</span>
             </button>
           </div>
           <ul class="accordion-body" role="tabpanel" v-if="muralsOpen">
             <li><RouterLink to="/highland">Park People</RouterLink></li>
             <li><RouterLink to="/pleasant-peninsula">Pleasant Peninsula</RouterLink></li>
-            <li><RouterLink to="/murals">Murals</RouterLink></li>
           </ul>
         </div>
-
+        <div class="accordion-button">
+          <RouterLink to="/commissions">Commissions</RouterLink>
+        </div>
+        <div class="accordion-button">
+          <RouterLink to="/available">Available Work</RouterLink>
+        </div>
+        <div class="accordion-button">
+          <RouterLink to="/about">About Me</RouterLink>
+        </div>
         <div class="accordion-item">
           <div class="accordion-header" role="tab">
             <button class="accordion-button" type="button" @click="contactOpen = !contactOpen">
@@ -110,12 +117,7 @@ function copyText() {
             </form> -->
           </div>
         </div>
-        <div class="accordion-button">
-          <RouterLink to="/about">About</RouterLink>
-        </div>
-        <div class="accordion-button">
-          <RouterLink to="/available">Available Work</RouterLink>
-        </div>
+
         <div class="icons">
           <a href="https://tumblr.com/meadowpaints" target="_blank">
             <img src="..\assets\img\tumblr_logo.png" class="tumblr" />
