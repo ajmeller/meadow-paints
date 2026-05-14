@@ -27,7 +27,7 @@ import Wiz from '../assets/img/abstract/wiz.jpg'
 import Snoozin from '../assets/img/abstract/snoozin.jpg'
 import Tidepool from '../assets/img/abstract/tidepool.jpg'
 import ColdToes from '../assets/img/abstract/cold-toes.png'
-import Everything from '../assets/img/abstract/everything.jpg'
+import Everything from '../assets/img/everything.jpg'
 </script>
 
 <template>
