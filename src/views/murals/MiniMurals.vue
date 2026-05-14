@@ -1,15 +1,11 @@
 <script setup lang="ts">
 import LightboxImage from '../../components/LightboxImage.vue'
-import Logperch2 from '../../assets/img/pp/logperch2.png'
-import Logperch3 from '../../assets/img/pp/logperch3.png'
-import Logperch4 from '../../assets/img/pp/logperch4.png'
 import Logperch from '../../assets/img/pp/logperch.png'
 import Orchid from '../../assets/img/pp/fringed-orchid.jpg'
-import Orchid2 from '../../assets/img/pp/fringed-orchid2.jpg'
-import Orchid3 from '../../assets/img/pp/fringed-orchid3.jpg'
 import Dunes from '../../assets/img/pp/dunes-mural.jpg'
 import Dunes2 from '../../assets/img/pp/dunes-mural2.jpg'
-import Me from '../../assets/img/pp/pp-me.jpg'
+import Logperch_Trans from '../../assets/img/pp/logperch_trans.png'
+import Orchid_Trans from '../../assets/img/pp/fringed-orchid_trans.png'
 </script>
 
 <template>
@@ -58,23 +54,12 @@ import Me from '../../assets/img/pp/pp-me.jpg'
       are native to the Grand River. My species was the logperch. Learn more and see the others
       <a href="https://www.pleasantpeninsula.org/2024" target="_blank">here</a>!
     </div>
-    <div class="lighbox-gallery">
+    <div class="one-column fishes">
       <img
-        class="big-img"
         v-lazy="Logperch"
         alt="Painting of a logperch attached to 6th st. bridge in Grand Rapids, MI"
       />
-      <div class="grid">
-        <div class="col item">
-          <LightboxImage :image="Logperch4" />
-        </div>
-        <div class="col item">
-          <LightboxImage :image="Logperch3" />
-        </div>
-        <div class="col item">
-          <LightboxImage :image="Logperch2" />
-        </div>
-      </div>
+      <img v-lazy="Logperch_Trans" alt="Painting of a logperch" />
     </div>
 
     <div class="heading">Pleasant Peninsula Native Flower Mural, 2025</div>
@@ -83,29 +68,35 @@ import Me from '../../assets/img/pp/pp-me.jpg'
       the purple fringed orchid. Learn more and see the others
       <a href="https://www.pleasantpeninsula.org/2025fest" target="_blank">here</a>!
     </div>
-    <div class="lighbox-gallery">
-      <div class="grid">
-        <div class="col item">
-          <LightboxImage :image="Orchid" />
-        </div>
-        <div class="col item">
-          <LightboxImage :image="Orchid2" />
-        </div>
-        <div class="col item">
-          <LightboxImage :image="Orchid3" />
-        </div>
-      </div>
+    <div class="two-img">
+      <img class="orchid" v-lazy="Orchid_Trans" alt="Painting of a purple fringed orchid" />
+      <img v-lazy="Orchid" />
     </div>
   </div>
 </template>
 
 <style>
-.big-img {
-  width: calc(100% - 12px);
-}
-
 .grid,
 .extra-description {
   margin-bottom: 60px;
+}
+
+.fishes {
+  margin-bottom: 60px;
+}
+
+.two-img {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+
+  img {
+    width: 100%;
+  }
+
+  .orchid {
+    width: 50%;
+  }
 }
 </style>

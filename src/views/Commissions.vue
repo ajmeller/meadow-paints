@@ -4,7 +4,7 @@ import Bookmark from '../assets/img/commissions/bookmark.jpg'
 import Remus from '../assets/img/commissions/remus.png'
 import dave from '../assets/img/commissions/dave.jpg'
 import Gibby from '../assets/img/commissions/gibby.jpg'
-import Olek2 from '../assets/img/murals/olek_mural2.jpg'
+import Olek2 from '../assets/img/murals/olek_mural.png'
 </script>
 
 <template>
