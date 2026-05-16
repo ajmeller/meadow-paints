@@ -14,21 +14,11 @@
 </template>
 
 <style scoped>
-.portfolio-block {
-  margin-left: 32px;
-}
-
 img {
   width: 100%;
 }
 
-@media (max-width: 1040px) {
-  .heading {
-    display: none;
-  }
-}
-
-@media (min-width: 1040px) {
+@media (min-width: 700px) {
   main {
     position: relative;
     display: inline-block;
@@ -46,27 +36,28 @@ img {
   }
 
   .heading {
-    left: 1%;
+    left: 2%;
+    top: 3%;
     z-index: 100;
     font-size: 60px;
   }
 
   .dropped {
     width: 260px;
-    left: 7%;
+    left: 9%;
     top: 16%;
   }
 
   .logperch {
     width: 450px;
-    right: 15%;
-    top: 4%;
+    right: 20%;
+    top: 5%;
   }
 
   .chippy {
     width: 200px;
-    right: 1%;
-    top: 31%;
+    right: 2%;
+    top: 26%;
     z-index: 4;
     border-radius: 50% 50% 50% 50% / 34% 34% 0% 0%;
   }
@@ -75,50 +66,65 @@ img {
     width: 400px;
     border-radius: 10px;
     top: 63%;
-    left: 1%;
+    left: 3%;
   }
 
   .belong {
-    left: 30%;
-    top: 42%;
+    left: 31%;
+    top: 38%;
     width: 240px;
     border-radius: 50%;
     z-index: 3;
   }
 
   .sam {
-    width: 240px;
-    left: 48%;
-    top: 59%;
+    width: 200px;
+    left: 46%;
+    top: 61%;
   }
 
   .dunes {
-    width: 200px;
-    top: 75%;
-    left: 71%;
+    width: 240px;
+    top: 65%;
+    right: 12%;
     z-index: 5;
   }
+
+  .animate:hover {
+    animation: animate 0.5s linear infinite;
+  }
+
+  @keyframes animate {
+    10% {
+      transform: rotate(-0.5deg);
+    }
+
+    25% {
+      transform: rotate(-1deg);
+    }
+
+    75% {
+      transform: rotate(1deg);
+    }
+
+    90% {
+      transform: rotate(0.5deg);
+    }
+  }
 }
 
-.animate:hover {
-  animation: animate 0.5s linear infinite;
+@media (max-width: 1040px) {
+  .heading {
+    font-size: 40px;
+    background-color: #fffdf7ce;
+    border-radius: 40px;
+    padding: 4px 20px;
+  }
 }
 
-@keyframes animate {
-  10% {
-    transform: rotate(-0.5deg);
-  }
-
-  25% {
-    transform: rotate(-1deg);
-  }
-
-  75% {
-    transform: rotate(1deg);
-  }
-
-  90% {
-    transform: rotate(0.5deg);
+@media (max-width: 700px) {
+  .heading {
+    display: none;
   }
 }
 </style>

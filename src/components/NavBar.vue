@@ -25,7 +25,7 @@ function copyText() {
         </div>
         <div class="accordion" role="tablist" :class="{ show: menuOpen }">
           <div v-show="menuOpen" class="heading">Meadow Paints</div>
-          <div class="accordion-item">
+          <div class="accordion-item paintings">
             <div class="accordion-header" role="tab">
               <button class="accordion-button" type="button" @click="paintingOpen = !paintingOpen">
                 Paintings
@@ -178,6 +178,16 @@ img.logo {
   color: #a17c6d;
 }
 
+.paintings {
+  min-width: 160px;
+}
+
+.accordion-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .accordion-button {
   font-family: Gaegu, sans-serif;
   font-size: 28px;
@@ -187,19 +197,21 @@ img.logo {
   cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 8px;
   color: #463d3d;
   padding: 0px;
 }
 
-.accordion-body {
-  margin-bottom: 8px;
-}
-
 ul {
   list-style: none;
   margin: 0px;
-  padding-left: 16px;
+  text-align: right;
+  padding: 0px;
+}
+
+.accordion-body {
+  margin-bottom: 8px;
 }
 
 .justify-center {
@@ -210,7 +222,8 @@ ul {
 
 .accordion-body.form {
   margin-left: 16px;
-  max-width: 200px;
+  max-width: 400px;
+  text-align: right;
 }
 
 .msg {
@@ -222,6 +235,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 8px;
+  justify-content: flex-end;
 }
 
 .icons {
