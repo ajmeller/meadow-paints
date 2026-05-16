@@ -6,7 +6,7 @@ import Olek2 from '../../assets/img/murals/olek_mural2.png'
 <template>
   <div class="page-content">
     <div class="heading">Leaf Fall Day, 2026</div>
-    <div class="description">Private residential commission</div>
+    <div class="description">Private residence</div>
     <div class="one-column">
       <img v-lazy="Olek1" />
       <img v-lazy="Olek2" />

@@ -6,10 +6,8 @@ import UpButton from '././components/UpButton.vue'
 </script>
 
 <template>
-  <div class="side-by-side">
-    <NavBar />
-    <RouterView />
-  </div>
+  <NavBar />
+  <RouterView />
   <UpButton />
-  <SpeedInsights />
+  <!-- <SpeedInsights /> -->
 </template>

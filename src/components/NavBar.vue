@@ -19,71 +19,77 @@ function copyText() {
       <span class="material-icons hamburger" @click="menuOpen = !menuOpen">
         {{ menuOpen ? 'close' : 'menu' }}
       </span>
-      <div class="logo-box">
-        <RouterLink to="/"> <img class="logo" src="../assets/img/logo-no-bg.png" /></RouterLink>
-      </div>
-      <div class="accordion" role="tablist" :class="{ show: menuOpen }">
-        <div v-show="menuOpen" class="heading">Meadow Paints</div>
-        <div class="accordion-item">
-          <div class="accordion-header" role="tab">
-            <button class="accordion-button" type="button" @click="paintingOpen = !paintingOpen">
-              Paintings
-              <span class="material-icons">{{ paintingOpen ? 'expand_less' : 'expand_more' }}</span>
-            </button>
-          </div>
-
-          <ul class="accordion-body" role="tabpanel" v-if="paintingOpen">
-            <li>
-              <RouterLink to="/mitosis">Mitosis</RouterLink>
-            </li>
-            <li><RouterLink to="/murals">Murals</RouterLink></li>
-            <li><RouterLink to="/paintings">All Paintings</RouterLink></li>
-          </ul>
+      <div class="space-between">
+        <div class="logo-box">
+          <RouterLink to="/"> <img class="logo" src="../assets/img/logo-no-bg.png" /></RouterLink>
         </div>
-        <div class="accordion-item">
-          <div class="accordion-header" role="tab">
-            <button class="accordion-button" type="button" @click="muralsOpen = !muralsOpen">
-              Public Art
-              <span class="material-icons">{{ muralsOpen ? 'expand_less' : 'expand_more' }}</span>
-            </button>
-          </div>
-          <ul class="accordion-body" role="tabpanel" v-if="muralsOpen">
-            <li><RouterLink to="/highland">Park People</RouterLink></li>
-            <li><RouterLink to="/pleasant-peninsula">Pleasant Peninsula</RouterLink></li>
-          </ul>
-        </div>
-        <div class="accordion-button">
-          <RouterLink to="/commissions">Commissions</RouterLink>
-        </div>
-        <div class="accordion-button">
-          <RouterLink to="/available">Available Work</RouterLink>
-        </div>
-        <div class="accordion-button">
-          <RouterLink to="/about">About Me</RouterLink>
-        </div>
-        <div class="accordion-item">
-          <div class="accordion-header" role="tab">
-            <button class="accordion-button" type="button" @click="contactOpen = !contactOpen">
-              Contact
-              <span class="material-icons">{{ contactOpen ? 'expand_less' : 'expand_more' }}</span>
-            </button>
-          </div>
-          <div class="accordion-body form" role="tabpanel" v-if="contactOpen">
-            <div class="msg">
-              Please email me directly at
-              <span class="align"
-                >meadowpaintsart@gmail.com
-                <button
-                  class="icon-btn"
-                  type="button"
-                  @click="copyText()"
-                  title="Copy to clipboard"
-                >
-                  <span class="material-icons">content_copy</span>
-                </button>
-              </span>
+        <div class="accordion" role="tablist" :class="{ show: menuOpen }">
+          <div v-show="menuOpen" class="heading">Meadow Paints</div>
+          <div class="accordion-item">
+            <div class="accordion-header" role="tab">
+              <button class="accordion-button" type="button" @click="paintingOpen = !paintingOpen">
+                Paintings
+                <span class="material-icons">{{
+                  paintingOpen ? 'expand_less' : 'expand_more'
+                }}</span>
+              </button>
             </div>
-            <!-- <form method="post">
+
+            <ul class="accordion-body" role="tabpanel" v-if="paintingOpen">
+              <li>
+                <RouterLink to="/mitosis">Mitosis</RouterLink>
+              </li>
+              <li><RouterLink to="/paintings">Non-Series Paintings</RouterLink></li>
+            </ul>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header" role="tab">
+              <button class="accordion-button" type="button" @click="muralsOpen = !muralsOpen">
+                Murals & Public Art
+                <span class="material-icons">{{ muralsOpen ? 'expand_less' : 'expand_more' }}</span>
+              </button>
+            </div>
+            <ul class="accordion-body" role="tabpanel" v-if="muralsOpen">
+              <li><RouterLink to="/murals">Murals</RouterLink></li>
+              <li><RouterLink to="/highland">Park People</RouterLink></li>
+              <li><RouterLink to="/pleasant-peninsula">Pleasant Peninsula</RouterLink></li>
+            </ul>
+          </div>
+          <div class="accordion-button">
+            <RouterLink to="/illustration">Illustration</RouterLink>
+          </div>
+          <div class="accordion-button">
+            <RouterLink to="/available">Available Work</RouterLink>
+          </div>
+          <div class="accordion-button">
+            <RouterLink to="/about">About Me</RouterLink>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header" role="tab">
+              <button class="accordion-button" type="button" @click="contactOpen = !contactOpen">
+                Contact
+                <span class="material-icons">{{
+                  contactOpen ? 'expand_less' : 'expand_more'
+                }}</span>
+              </button>
+            </div>
+            <div class="accordion-body form" role="tabpanel" v-if="contactOpen">
+              <div class="msg">
+                Have a spectacular idea for me to paint? I am open to murals, design work, printed
+                media, pet portraits, and more. Please email me directly at
+                <span class="align"
+                  >meadowpaintsart@gmail.com
+                  <button
+                    class="icon-btn"
+                    type="button"
+                    @click="copyText()"
+                    title="Copy to clipboard"
+                  >
+                    <span class="material-icons">content_copy</span>
+                  </button>
+                </span>
+              </div>
+              <!-- <form method="post">
               <div>
                 <input
                   class="form-control"
@@ -115,13 +121,14 @@ function copyText() {
                 <button class="btn btn-primary" type="submit">Send</button>
               </div>
             </form> -->
+            </div>
           </div>
-        </div>
 
-        <div class="icons">
-          <a href="https://instagram.com/meadowpaints" target="_blank">
-            <img src="..\assets\img\instagram.svg" class="ig" />
-          </a>
+          <div class="icons">
+            <a href="https://instagram.com/meadowpaints" target="_blank">
+              <img src="..\assets\img\instagram.svg" class="ig" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -129,6 +136,12 @@ function copyText() {
 </template>
 
 <style scoped>
+.navbar {
+  padding: 12px 12px 0px;
+  position: relative;
+  box-shadow: 0px -19px 22px 6px #555e64;
+}
+
 .hamburger {
   display: none;
   font-size: 40px;
@@ -139,22 +152,17 @@ img.logo {
   width: 100px;
 }
 
-.icons {
-  margin-top: 8px;
+.space-between {
   display: flex;
-  align-items: center;
-  gap: 12px;
-  height: fit-content;
-}
-
-img.ig {
-  width: 36px;
-  height: 36px;
-  color: #463d3d;
+  justify-content: space-between;
+  gap: 60px;
 }
 
 .accordion {
-  min-width: 220px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  column-gap: 32px;
 }
 
 .icon-btn {
@@ -216,23 +224,18 @@ ul {
   gap: 8px;
 }
 
-@media (max-width: 1040px) {
-  .container {
-    width: 100%;
-    display: flex;
-    gap: 24px;
-    margin-top: -12px;
-  }
+.icons {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: fit-content;
+}
 
-  .accordion {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 28px;
-  }
-
-  .icons {
-    margin-top: 12px;
-  }
+img.ig {
+  width: 36px;
+  height: 36px;
+  color: #463d3d;
 }
 
 @media (max-width: 700px) {

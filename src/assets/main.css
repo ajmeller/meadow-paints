@@ -1,19 +1,15 @@
 body {
   font-family: 'Nunito Sans', sans-serif;
   color: #463d3d;
-  background-color: #fff8e3;
+  background-color: #fffdf7;
   background-image: url('../assets/img/background.png');
   background-size: cover;
-  margin: 20px;
   height: 100%;
+  margin: 0px;
 
   .page-content {
-    margin: 0px 20px;
-  }
-
-  .side-by-side {
-    display: flex;
-    gap: 20px;
+    padding: 20px;
+    background-color: #fffdf7;
   }
 
   button.up {
@@ -64,7 +60,7 @@ body {
 
   a:hover {
     text-decoration: none;
-    color: #ea85e6;
+    color: #fb5098;
   }
 
   input,
@@ -89,6 +85,9 @@ body {
   }
 
   .lighbox-gallery {
+    /* background-color: rgba(255, 255, 255, 0.453);
+    padding: 20px; */
+
     .grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -111,11 +110,10 @@ body {
   .one-column {
     grid-template-columns: 1fr;
 
-  img {
-    width: 100%;
+    img {
+      width: 100%;
+    }
   }
-}
-
 
   @media (max-width: 1040px) {
     .side-by-side {

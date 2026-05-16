@@ -7,7 +7,7 @@ import Paintings from '../views/Paintings.vue'
 import MiniMurals from '../views/murals/MiniMurals.vue'
 import Murals from '../views/murals/Murals.vue'
 import Available from '../views/Available.vue'
-import Commissions from '../views/Commissions.vue'
+import Illustrations from '../views/Illustrations.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -53,9 +53,9 @@ const router = createRouter({
       component: Available,
     },
     {
-      path: '/commissions',
-      name: 'Commissions',
-      component: Commissions,
+      path: '/illustration',
+      name: 'Illustration',
+      component: Illustrations,
     },
   ],
 })
