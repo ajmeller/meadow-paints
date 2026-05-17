@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import LightboxImage from '../components/LightboxImage.vue'
-import Bookmark from '../assets/img/commissions/bookmark.jpg'
+import Bookmark from '../assets/img/illustration/bookmark.jpg'
 </script>
 
 <template>

@@ -5,9 +5,9 @@
       <img src="../assets/img/posts/chippy.png" class="absolute chippy animate" />
       <img src="../assets/img/mitosis/Belong.jpg" class="absolute belong animate" />
       <img src="../assets/img/pp/logperch_cropped.png" class="absolute logperch animate" />
-      <img src="../assets/img/abstract/sams-fire.png" class="absolute sam animate" />
+      <img src="../assets/img/paintings/sams-fire.png" class="absolute sam animate" />
       <img src="../assets/img/mitosis/dropped.png" class="absolute dropped animate" />
-      <img src="../assets/img/indoor-fish.jpg" class="absolute fish animate" />
+      <img src="../assets/img/paintings/indoor-fish.jpg" class="absolute fish animate" />
       <img src="../assets/img/pp/dunes-mural.jpg" class="absolute dunes animate" />
     </section>
   </main>

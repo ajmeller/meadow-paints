@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import LightboxImage from '../../components/LightboxImage.vue'
 import Logperch from '../../assets/img/pp/logperch.png'
-import Orchid from '../../assets/img/pp/fringed-orchid.jpg'
 import Dunes from '../../assets/img/pp/dunes-mural.jpg'
 import Dunes2 from '../../assets/img/pp/dunes-mural2.jpg'
 import Logperch_Trans from '../../assets/img/pp/logperch_trans.png'
-import Orchid_Trans from '../../assets/img/pp/fringed-orchid_trans.png'
 </script>
 
 <template>
@@ -60,17 +58,6 @@ import Orchid_Trans from '../../assets/img/pp/fringed-orchid_trans.png'
         alt="Painting of a logperch attached to 6th st. bridge in Grand Rapids, MI"
       />
       <img v-lazy="Logperch_Trans" alt="Painting of a logperch" />
-    </div>
-
-    <div class="heading">Pleasant Peninsula Native Flower Mural, 2025</div>
-    <div class="description">
-      In 2025, 100 artists painted 50 pollinators and 50 flowers native to Michigan. My species was
-      the purple fringed orchid. Learn more and see the others
-      <a href="https://www.pleasantpeninsula.org/2025fest" target="_blank">here</a>!
-    </div>
-    <div class="two-img">
-      <img class="orchid" v-lazy="Orchid_Trans" alt="Painting of a purple fringed orchid" />
-      <img v-lazy="Orchid" />
     </div>
   </div>
 </template>

@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import LightboxImage from '../components/LightboxImage.vue'
-import Tidepool from '../assets/img/abstract/tidepool.jpg'
-import Everything from '../assets/img/everything.jpg'
+import Tidepool from '../assets/img/paintings/tidepool.jpg'
+import Everything from '../assets/img/paintings/everything.jpg'
 import Pollen from '../assets/img/mitosis/pollen.png'
 import Belong from '../assets/img/mitosis/Belong.jpg'
 import BeachFossils from '../assets/img/mitosis/beach-fossils.jpg'
 import Egg from '../assets/img/mitosis/egg.jpg'
-import IndoorFish from '../assets/img/indoor-fish.jpg'
+import IndoorFish from '../assets/img/paintings/indoor-fish.jpg'
 </script>
 
 <template>
