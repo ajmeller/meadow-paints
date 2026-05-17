@@ -13,8 +13,9 @@ defineProps({
 
 const showLighbox = ref(false)
 
-function close(event) {
-  if (event.target.id === 'modalMask') {
+function close(event: Event) {
+  const eventTarget = event.target as HTMLElement
+  if (eventTarget.id === 'modalMask') {
     showLighbox.value = false
   }
 }
