@@ -30,7 +30,7 @@ import Squirrels from '../../assets/img/posts/squirrels.jpg'
 </script>
 
 <template>
-  <div class="page-content">
+  <div class="page-content white-bg">
     <div class="heading">Park People, 2024</div>
     <div class="description">
       This mural was commissioned by the Highland Park Neighborhood Arts Committee, and is located

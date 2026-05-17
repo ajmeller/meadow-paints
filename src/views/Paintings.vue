@@ -31,8 +31,7 @@ import Everything from '../assets/img/everything.jpg'
 </script>
 
 <template>
-  <div class="page-content">
-    <div class="heading">All Paintings</div>
+  <div class="page-content white-bg">
     <div class="lighbox-gallery">
       <div class="grid">
         <div class="col item">

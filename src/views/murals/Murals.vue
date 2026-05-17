@@ -4,7 +4,7 @@ import Olek2 from '../../assets/img/murals/olek_mural2.png'
 </script>
 
 <template>
-  <div class="page-content">
+  <div class="page-content white-bg">
     <div class="heading">Leaf Fall Day, 2026</div>
     <div class="description">Private residence</div>
     <div class="one-column">

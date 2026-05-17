@@ -24,40 +24,43 @@ const carouselConfig = {
     <div class="heading">Mitosis, 2022-</div>
     <Carousel v-bind="carouselConfig">
       <Slide :key="0">
-        <LightboxImage :image="Mitosis" caption="Mitosis, acrylic on cradled wood panel. 2022." />
-      </Slide>
-      <Slide :key="1">
         <LightboxImage :image="MitosisII" caption="Mitosis II, acrylic on wood board. 2023." />
       </Slide>
-      <Slide :key="2">
+      <Slide :key="1">
         <LightboxImage
           :image="Dropped"
           caption="(Dropped my) jelly donut, acrylic on wood board. 2023."
         />
       </Slide>
-      <Slide :key="3">
-        <LightboxImage :image="Pollen" caption="Pollen, oil on wood board. 2024." />
-      </Slide>
-      <Slide :key="4">
-        <LightboxImage :image="Belong" caption="Belong?, oil on wood board. 2024." />
-      </Slide>
-      <Slide :key="5">
-        <LightboxImage :image="BeachFossils" caption="Beach Fossils, oil on wood board. 2024." />
-      </Slide>
-      <Slide :key="6">
+      <Slide :key="2">
         <LightboxImage :image="Commune" caption="Commune, acrylic on wood board. 2023." />
       </Slide>
-      <Slide :key="7">
-        <LightboxImage :image="Cytoplasm" caption="Cytoplasm, acrylic on wood board. 2023."
-      /></Slide>
-      <Slide :key="8" class="egg">
-        <LightboxImage :image="Egg" caption="The Egg, acrylic and oil on wood board. 2025." />
-      </Slide>
-      <Slide :key="9">
+
+      <Slide :key="3">
         <LightboxImage
           :image="CytoplasmCity"
           caption="Cytoplasm City, acrylic on wood board. 2023."
         />
+      </Slide>
+      <Slide :key="4">
+        <LightboxImage :image="Cytoplasm" caption="Cytoplasm, acrylic on wood board. 2023."
+      /></Slide>
+
+      <Slide :key="5">
+        <LightboxImage :image="Belong" caption="Belong?, oil on wood board. 2024." />
+      </Slide>
+      <Slide :key="6" class="egg">
+        <LightboxImage :image="Egg" caption="The Egg, acrylic and oil on wood board. 2025." />
+      </Slide>
+      <Slide :key="7">
+        <LightboxImage :image="Pollen" caption="Pollen, oil on wood board. 2024." />
+      </Slide>
+
+      <Slide :key="8">
+        <LightboxImage :image="BeachFossils" caption="Beach Fossils, oil on wood board. 2024." />
+      </Slide>
+      <Slide :key="9">
+        <LightboxImage :image="Mitosis" caption="Mitosis, acrylic on cradled wood panel. 2022." />
       </Slide>
 
       <template #addons>
@@ -80,21 +83,21 @@ const carouselConfig = {
 <style>
 .carousel__slide {
   img {
-    width: 33vw;
+    width: 35vw;
     cursor: pointer;
   }
 }
 
 .egg {
   img {
-    width: 200px;
+    width: 120px;
   }
 }
 
 .carousel__viewport {
-  width: 90%;
+  width: 92%;
   position: relative;
-  left: 5%;
+  left: 4%;
 }
 
 .carousel {

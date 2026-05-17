@@ -10,7 +10,7 @@ import IndoorFish from '../assets/img/indoor-fish.jpg'
 </script>
 
 <template>
-  <div class="page-content">
+  <div class="page-content white-bg">
     <div class="heading">Available Work</div>
     <div class="description">
       The work on this page is available to purchase at in-person events or via local pick up. Check

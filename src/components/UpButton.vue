@@ -13,12 +13,17 @@ function goToTop() {
 <style>
 button.up {
   color: #fff8e3;
-  background-color: #463d3d;
+  background-color: #463d3d80;
   border: none;
   border-radius: 50%;
   width: 36px;
   height: 36px;
   font-size: 20px;
   cursor: pointer;
+
+  &:hover {
+    background-color: #463d3d;
+    cursor: pointer;
+  }
 }
 </style>

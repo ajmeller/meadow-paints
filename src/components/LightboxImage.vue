@@ -12,6 +12,12 @@ defineProps({
 })
 
 const showLighbox = ref(false)
+
+function close(event) {
+  if (event.target.id === 'modalMask') {
+    showLighbox.value = false
+  }
+}
 </script>
 
 <template>
@@ -24,15 +30,15 @@ const showLighbox = ref(false)
 
   <Teleport to="body">
     <Transition name="modal">
-      <div v-if="showLighbox" class="modal-mask">
+      <div v-if="showLighbox" class="modal-mask" id="modalMask" @click="close($event)">
         <div class="modal-container">
+          <button @click="showLighbox = false" class="close">
+            <span class="material-icons">close</span>
+          </button>
           <div class="inner-container">
-            <button @click="showLighbox = false" class="close-btn">
-              <span class="material-icons">close</span>
-            </button>
             <div class="lightbox-img"><img v-lazy="image" :alt="alt" /></div>
+            <div v-if="caption" class="caption">{{ caption }}</div>
           </div>
-          <div v-if="caption" class="caption">{{ caption }}</div>
         </div>
       </div>
     </Transition>
@@ -53,36 +59,47 @@ const showLighbox = ref(false)
 }
 
 .modal-container {
-  max-width: 75vw;
-  max-height: 90vh;
+  max-height: 95vh;
   margin: auto;
-  padding: 20px 36px 20px 5px;
-  background-color: #fff8e3;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+  position: relative;
+  background-color: #fffdf7;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px #555e64;
   transition: all 0.3s ease;
 }
 
 .inner-container {
   display: flex;
-  align-items: start;
-  gap: 8px;
+  align-items: center;
+  flex-direction: column;
+  padding: 12px;
 
   img {
-    max-width: 70vw;
     max-height: 80vh;
+    max-width: 90vw;
   }
+}
 
-  .close-btn {
-    border: none;
-    background: none;
-    cursor: pointer;
+.close {
+  border: none;
+  background-color: #463d3d80;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fffdf7;
+  padding: 4px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+
+  &:hover {
+    background-color: #463d3d;
   }
 }
 
 .caption {
-  margin-left: 44px;
-  margin-top: 8px;
+  margin: 4px auto;
+  text-align: center;
+  width: 90%;
 }
 
 .modal-enter-from {

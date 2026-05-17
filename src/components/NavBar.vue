@@ -14,11 +14,13 @@ function copyText() {
 </script>
 
 <template>
-  <nav class="navbar navbar-expand">
+  <nav class="navbar">
     <div class="container">
-      <span class="material-icons hamburger" @click="menuOpen = !menuOpen">
-        {{ menuOpen ? 'close' : 'menu' }}
-      </span>
+      <button class="icon-btn hamburger" @click="menuOpen = !menuOpen">
+        <span class="material-icons">
+          {{ menuOpen ? 'close' : 'menu' }}
+        </span>
+      </button>
       <div class="space-between">
         <div class="logo-box">
           <RouterLink to="/"> <img class="logo" src="../assets/img/logo-no-bg.png" /></RouterLink>
@@ -144,8 +146,6 @@ function copyText() {
 
 .hamburger {
   display: none;
-  font-size: 40px;
-  cursor: pointer;
 }
 
 img.logo {
@@ -253,11 +253,16 @@ img.ig {
 
   .accordion {
     display: none;
+
+    &.show {
+      display: block;
+      margin-top: 8px;
+    }
   }
 
-  .show {
-    display: block;
-    margin-top: 8px;
+  .heading {
+    margin-right: 55px;
+    margin-top: -8px;
   }
 }
 </style>

@@ -9,7 +9,10 @@ body {
 
   .page-content {
     padding: 20px;
-    background-color: #fffdf7;
+
+    &.white-bg {
+      background-color: #fffdf7;
+    }
   }
 
   button.up {
@@ -60,6 +63,10 @@ body {
     cursor: pointer;
     color: #463d3d;
     padding: 0px;
+
+    .material-icons {
+      font-size: 32px;
+    }
   }
 
   .icon-btn:hover {

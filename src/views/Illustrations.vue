@@ -4,7 +4,7 @@ import Bookmark from '../assets/img/commissions/bookmark.jpg'
 </script>
 
 <template>
-  <div class="page-content">
+  <div class="page-content white-bg">
     <div class="heading">Illustration</div>
     <div class="description">
       Email me at meadowpaintsart@gmail.com to inquire about commissions.
