@@ -10,11 +10,60 @@ import Commune from '../assets/img/mitosis/commune.png'
 import Cytoplasm from '../assets/img/mitosis/cytoplasm.png'
 import Egg from '../assets/img/mitosis/egg.jpg'
 import CytoplasmCity from '../assets/img/mitosis/cytoplasm-city.png'
+import 'vue3-carousel/carousel.css'
+import { Carousel, Slide, Navigation } from 'vue3-carousel'
+
+const carouselConfig = {
+  itemsToShow: 2.5,
+  wrapAround: true,
+}
 </script>
 
 <template>
   <div class="page-content">
-    <div class="heading">Mitosis, 2022-2025</div>
+    <div class="heading">Mitosis, 2022-</div>
+    <Carousel v-bind="carouselConfig">
+      <Slide :key="0">
+        <LightboxImage :image="Mitosis" caption="Mitosis, acrylic on cradled wood panel. 2022." />
+      </Slide>
+      <Slide :key="1">
+        <LightboxImage :image="MitosisII" caption="Mitosis II, acrylic on wood board. 2023." />
+      </Slide>
+      <Slide :key="2">
+        <LightboxImage
+          :image="Dropped"
+          caption="(Dropped my) jelly donut, acrylic on wood board. 2023."
+        />
+      </Slide>
+      <Slide :key="3">
+        <LightboxImage :image="Pollen" caption="Pollen, oil on wood board. 2024." />
+      </Slide>
+      <Slide :key="4">
+        <LightboxImage :image="Belong" caption="Belong?, oil on wood board. 2024." />
+      </Slide>
+      <Slide :key="5">
+        <LightboxImage :image="BeachFossils" caption="Beach Fossils, oil on wood board. 2024." />
+      </Slide>
+      <Slide :key="6">
+        <LightboxImage :image="Commune" caption="Commune, acrylic on wood board. 2023." />
+      </Slide>
+      <Slide :key="7">
+        <LightboxImage :image="Cytoplasm" caption="Cytoplasm, acrylic on wood board. 2023."
+      /></Slide>
+      <Slide :key="8" class="egg">
+        <LightboxImage :image="Egg" caption="The Egg, acrylic and oil on wood board. 2025." />
+      </Slide>
+      <Slide :key="9">
+        <LightboxImage
+          :image="CytoplasmCity"
+          caption="Cytoplasm City, acrylic on wood board. 2023."
+        />
+      </Slide>
+
+      <template #addons>
+        <Navigation />
+      </template>
+    </Carousel>
     <div class="description">
       It can be difficult to convert something that was initally a visual language into a written
       language. This series started as an abstract exploration, when shapes that looked like cells
@@ -25,31 +74,35 @@ import CytoplasmCity from '../assets/img/mitosis/cytoplasm-city.png'
       community. As this project continues to evolve, I am interested in exploring the history of
       these organisms and our Earth's geology.
     </div>
-    <div class="lighbox-gallery">
-      <div class="grid">
-        <div class="col item">
-          <LightboxImage :image="Mitosis" caption="Mitosis, acrylic on cradled wood panel. 2022." />
-          <LightboxImage :image="MitosisII" caption="Mitosis II, acrylic on wood board. 2023." />
-          <LightboxImage
-            :image="Dropped"
-            caption="(Dropped my) jelly donut, acrylic on wood board. 2023."
-          />
-          <LightboxImage :image="Pollen" caption="Pollen, oil on wood board. 2024." />
-        </div>
-        <div class="col item">
-          <LightboxImage :image="Belong" caption="Belong?, oil on wood board. 2024." />
-          <LightboxImage :image="BeachFossils" caption="Beach Fossils, oil on wood board. 2024." />
-          <LightboxImage :image="Commune" caption="Commune, acrylic on wood board. 2023." />
-          <LightboxImage :image="Cytoplasm" caption="Cytoplasm, acrylic on wood board. 2023." />
-        </div>
-        <div class="col item">
-          <LightboxImage :image="Egg" caption="The Egg, acrylic and oil on wood board. 2025." />
-          <LightboxImage
-            :image="CytoplasmCity"
-            caption="Cytoplasm City, acrylic on wood board. 2023."
-          />
-        </div>
-      </div>
-    </div>
   </div>
 </template>
+
+<style>
+.carousel__slide {
+  img {
+    width: 33vw;
+    cursor: pointer;
+  }
+}
+
+.egg {
+  img {
+    width: 200px;
+  }
+}
+
+.carousel__viewport {
+  width: 90%;
+  position: relative;
+  left: 5%;
+}
+
+.carousel {
+  --vc-nav-color: #463d3d;
+  --vc-nav-color-hover: #fb5098;
+  --vc-nav-border-radius: 50%;
+  --vc-nav-width: 40px;
+  --vc-nav-height: 40px;
+  margin: 40px 0px 60px;
+}
+</style>

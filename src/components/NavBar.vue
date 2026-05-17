@@ -80,7 +80,7 @@ function copyText() {
                 <span class="align"
                   >meadowpaintsart@gmail.com
                   <button
-                    class="icon-btn"
+                    class="icon-btn copy"
                     type="button"
                     @click="copyText()"
                     title="Copy to clipboard"
@@ -165,19 +165,6 @@ img.logo {
   column-gap: 32px;
 }
 
-.icon-btn {
-  font-size: 20px;
-  border-style: none;
-  background: none;
-  cursor: pointer;
-  color: #463d3d;
-  padding: 0px;
-}
-
-.icon-btn:hover {
-  color: #a17c6d;
-}
-
 .paintings {
   min-width: 160px;
 }
@@ -229,6 +216,10 @@ ul {
 .msg {
   margin-bottom: 8px;
   font-size: 14px;
+}
+
+.copy {
+  font-size: 20px;
 }
 
 .align {
