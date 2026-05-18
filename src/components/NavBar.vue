@@ -212,6 +212,15 @@ ul.accordion-body {
   text-align: right;
 }
 
+.copy {
+  font-size: 16px;
+  cursor: pointer;
+
+  &:hover {
+    color: #fb5098;
+  }
+}
+
 .icon-btn {
   margin-top: 12px;
   height: fit-content;
