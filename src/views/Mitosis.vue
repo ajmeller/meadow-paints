@@ -24,43 +24,76 @@ const carouselConfig = {
     <div class="heading">Mitosis, 2022-</div>
     <Carousel v-bind="carouselConfig">
       <Slide :key="0">
-        <LightboxImage :image="MitosisII" caption="Mitosis II, acrylic on wood board. 2023." />
+        <LightboxImage
+          :image="MitosisII"
+          caption="Mitosis II, acrylic on wood board. 2023."
+          :is-lazy="false"
+        />
       </Slide>
       <Slide :key="1">
         <LightboxImage
           :image="Dropped"
           caption="(Dropped my) jelly donut, acrylic on wood board. 2023."
+          :is-lazy="false"
         />
       </Slide>
       <Slide :key="2">
-        <LightboxImage :image="Commune" caption="Commune, acrylic on wood board. 2023." />
+        <LightboxImage
+          :image="Commune"
+          caption="Commune, acrylic on wood board. 2023."
+          :is-lazy="false"
+        />
       </Slide>
 
       <Slide :key="3">
         <LightboxImage
           :image="CytoplasmCity"
           caption="Cytoplasm City, acrylic on wood board. 2023."
+          :is-lazy="false"
         />
       </Slide>
       <Slide :key="4">
-        <LightboxImage :image="Cytoplasm" caption="Cytoplasm, acrylic on wood board. 2023."
+        <LightboxImage
+          :image="Cytoplasm"
+          caption="Cytoplasm, acrylic on wood board. 2023."
+          :is-lazy="false"
       /></Slide>
 
       <Slide :key="5">
-        <LightboxImage :image="Belong" caption="Belong?, oil on wood board. 2024." />
+        <LightboxImage
+          :image="Belong"
+          caption="Belong?, oil on wood board. 2024."
+          :is-lazy="false"
+        />
       </Slide>
       <Slide :key="6" class="egg">
-        <LightboxImage :image="Egg" caption="The Egg, acrylic and oil on wood board. 2025." />
+        <LightboxImage
+          :image="Egg"
+          caption="The Egg, acrylic and oil on wood board. 2025."
+          :is-lazy="false"
+        />
       </Slide>
       <Slide :key="7">
-        <LightboxImage :image="Pollen" caption="Pollen, oil on wood board. 2024." />
+        <LightboxImage
+          :image="Pollen"
+          caption="Pollen, oil on wood board. 2024."
+          :is-lazy="false"
+        />
       </Slide>
 
       <Slide :key="8">
-        <LightboxImage :image="BeachFossils" caption="Beach Fossils, oil on wood board. 2024." />
+        <LightboxImage
+          :image="BeachFossils"
+          caption="Beach Fossils, oil on wood board. 2024."
+          :is-lazy="false"
+        />
       </Slide>
       <Slide :key="9">
-        <LightboxImage :image="Mitosis" caption="Mitosis, acrylic on cradled wood panel. 2022." />
+        <LightboxImage
+          :image="Mitosis"
+          caption="Mitosis, acrylic on cradled wood panel. 2022."
+          :is-lazy="false"
+        />
       </Slide>
 
       <template #addons>
@@ -68,14 +101,13 @@ const carouselConfig = {
       </template>
     </Carousel>
     <div class="description">
-      It can be difficult to convert something that was initally a visual language into a written
-      language. This series started as an abstract exploration, when shapes that looked like cells
-      began to emerge. I named that first piece Mitosis, and the rest of the series came from the
-      one, as one cell cleaves into two, and two become four, and so on. The complexity began to
-      grow subsequently. In some, I zoom into the inner workings of a cell: the cytoplasm. In
-      others, I zoom out to a single cell becoming a seed which becomes an organism and then a
-      community. As this project continues to evolve, I am interested in exploring the history of
-      these organisms and our Earth's geology.
+      This series started as an abstract exploration, when shapes that looked like cells began to
+      emerge. I named that first piece Mitosis, and the rest of the series came from the one, as one
+      cell cleaves into two, and two become four, and so on. The complexity began to grow
+      subsequently. In some, I zoom into the inner workings of a cell: the cytoplasm. In others, I
+      zoom out to a single cell becoming a seed which becomes an organism and then a community. As
+      this project continues to evolve, I am interested in exploring the history of these organisms
+      and our Earth's geology.
     </div>
   </div>
 </template>
@@ -90,7 +122,7 @@ const carouselConfig = {
 
 .egg {
   img {
-    width: 120px;
+    width: 40%;
   }
 }
 

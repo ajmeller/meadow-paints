@@ -9,6 +9,7 @@ defineProps({
   },
   caption: String,
   alt: String,
+  isLazy: { type: Boolean, default: true },
 })
 
 const showLighbox = ref(false)
@@ -23,11 +24,13 @@ function close(event: Event) {
 
 <template>
   <img
+    v-if="isLazy"
     class="grid-img"
     v-lazy="{ src: image, loading: Placeholder }"
     :alt="alt"
     @click="showLighbox = true"
   />
+  <img v-if="!isLazy" class="grid-img" :src="image" :alt="alt" @click="showLighbox = true" />
 
   <Teleport to="body">
     <Transition name="modal">
