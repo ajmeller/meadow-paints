@@ -67,9 +67,28 @@ body {
     .material-icons {
       font-size: 32px;
     }
+
+    img {
+      width: 36px;
+      height: 36px;
+    }
   }
 
   .icon-btn:hover {
+    color: #fb5098;
+  }
+
+  .clear-btn {
+    font-family: Gaegu, sans-serif;
+    font-size: 28px;
+    border-style: none;
+    background: none;
+    cursor: pointer;
+    color: #463d3d;
+    padding: 0px;
+  }
+
+  .clear-btn:hover {
     color: #fb5098;
   }
 

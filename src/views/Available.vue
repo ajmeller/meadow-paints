@@ -7,6 +7,7 @@ import Belong from '../assets/img/mitosis/Belong.jpg'
 import BeachFossils from '../assets/img/mitosis/beach-fossils.jpg'
 import Egg from '../assets/img/mitosis/egg.jpg'
 import IndoorFish from '../assets/img/paintings/indoor-fish.jpg'
+import Chip from '../assets/img/paintings/chippy.jpg'
 import FringedOrchid from '../assets/img/paintings/fringed-orchid.jpg'
 import Dunes from '../assets/img/murals/dunes-mural.jpg'
 </script>
@@ -33,9 +34,15 @@ import Dunes from '../assets/img/murals/dunes-mural.jpg'
           />
           <LightboxImage
             :image="Dunes"
-            alt="Painting of Lake Michigan dunes at sunset with a pitcher's thistle and monarch in the foreground."
+            caption="The Dunes | Latex paint on wood board | Can be placed outside | 4' x 4' | $3--"
           />
+          <LightboxImage
+            :image="Chip"
+            caption='Oil on wood panel | Approx. 5.5" x 3.5" x 0.75" | $1--'
+          />
+          <!-- big heart 8" x 4.5" x 0.75, cardinal is same as chip -->
         </div>
+
         <div class="col item">
           <LightboxImage
             :image="Belong"
@@ -57,7 +64,7 @@ import Dunes from '../assets/img/murals/dunes-mural.jpg'
         <div class="col item">
           <LightboxImage
             :image="FringedOrchid"
-            caption="Purple Fringed Orchid | Acrylic on wood panel | Approx. 3' x 1' | $1--"
+            caption="Purple Fringed Orchid | Acrylic on wood panel | Approx. 3' x 1' | $2--"
           />
           <LightboxImage
             :image="Everything"
