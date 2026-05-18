@@ -7,6 +7,8 @@ import Belong from '../assets/img/mitosis/Belong.jpg'
 import BeachFossils from '../assets/img/mitosis/beach-fossils.jpg'
 import Egg from '../assets/img/mitosis/egg.jpg'
 import IndoorFish from '../assets/img/paintings/indoor-fish.jpg'
+import FringedOrchid from '../assets/img/paintings/fringed-orchid.jpg'
+import Dunes from '../assets/img/murals/dunes-mural.jpg'
 </script>
 
 <template>
@@ -30,8 +32,8 @@ import IndoorFish from '../assets/img/paintings/indoor-fish.jpg'
             caption='Tidepool | Oil on wood panel | Approx. 5.25" x 7" x 0.75" | $1--'
           />
           <LightboxImage
-            :image="Everything"
-            caption="Everything is everything | Acrylic on wood panel | $--"
+            :image="Dunes"
+            alt="Painting of Lake Michigan dunes at sunset with a pitcher's thistle and monarch in the foreground."
           />
         </div>
         <div class="col item">
@@ -47,11 +49,19 @@ import IndoorFish from '../assets/img/paintings/indoor-fish.jpg'
             :image="Pollen"
             caption='Pollen | Oil on wood board | 4" diameter, 0.75" depth | $--'
           />
-        </div>
-        <div class="col item">
           <LightboxImage
             :image="Egg"
             caption='The Egg | Acrylic and oil on wood board | Approx. 2.5" x 7" x 0.6" | $1--'
+          />
+        </div>
+        <div class="col item">
+          <LightboxImage
+            :image="FringedOrchid"
+            caption="Purple Fringed Orchid | Acrylic on wood panel | Approx. 3' x 1' | $1--"
+          />
+          <LightboxImage
+            :image="Everything"
+            caption="Everything is everything | Acrylic on wood panel | $--"
           />
         </div>
       </div>

@@ -4,7 +4,6 @@ import About from '../views/About.vue'
 import Highland from '../views/murals/Highland.vue'
 import Mitosis from '../views/Mitosis.vue'
 import Paintings from '../views/Paintings.vue'
-import MiniMurals from '../views/murals/MiniMurals.vue'
 import Murals from '../views/murals/Murals.vue'
 import Available from '../views/Available.vue'
 import Illustrations from '../views/Illustrations.vue'
@@ -21,11 +20,6 @@ const router = createRouter({
       path: '/about',
       name: 'about',
       component: About,
-    },
-    {
-      path: '/pleasant-peninsula',
-      name: 'Pleasant Peninsula',
-      component: MiniMurals,
     },
     {
       path: '/murals',

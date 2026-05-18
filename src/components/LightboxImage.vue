@@ -47,6 +47,10 @@ function close(event: Event) {
 </template>
 
 <style>
+img.grid-img {
+  cursor: pointer;
+}
+
 .modal-mask {
   position: fixed;
   z-index: 9998;

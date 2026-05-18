@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import Me from '../assets/img/me.png'
+import Me2 from '../assets/img/ppme.jpg'
+import Me3 from '../assets/img/murals/olek_mural2.png'
 </script>
 
 <template>
@@ -14,9 +16,11 @@ import Me from '../assets/img/me.png'
         in, notice, and pay homage to the natural world and mystery. I especially love drawing
         animals or making abstract compositions.
       </div>
+      <br /><br />
+      <img v-lazy="Me3" alt="Photo of Meadow with a mural they painted" />
     </div>
     <div class="right">
-      <img v-lazy="Me" alt="Photo of Meadow" />
+      <img v-lazy="Me2" alt="Photo of Meadow painting" />
     </div>
   </div>
 </template>

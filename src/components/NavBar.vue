@@ -54,7 +54,6 @@ function copyText() {
             <ul class="accordion-body" role="tabpanel" v-if="muralsOpen">
               <li><RouterLink to="/murals">Murals</RouterLink></li>
               <li><RouterLink to="/highland">Park People</RouterLink></li>
-              <li><RouterLink to="/pleasant-peninsula">Pleasant Peninsula</RouterLink></li>
             </ul>
           </div>
           <div class="accordion-button">
