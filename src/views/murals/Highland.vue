@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import LightboxImage from '../../components/LightboxImage.vue'
 import Chippy from '../../assets/img/posts/chippy.png'
 import Chippy2 from '../../assets/img/posts/chippy2.jpg'
 import BES from '../../assets/img/posts/bes.jpg'
@@ -42,37 +41,37 @@ import Squirrels from '../../assets/img/posts/squirrels.jpg'
     <div class="lighbox-gallery">
       <div class="grid">
         <div class="col item">
-          <LightboxImage :image="Chippy" />
-          <LightboxImage :image="Goldenrod2" />
-          <LightboxImage :image="Asters" />
-          <LightboxImage :image="Monarchs" />
-          <LightboxImage :image="Conehead" />
-          <LightboxImage :image="Toads" />
-          <LightboxImage :image="River" />
-          <LightboxImage :image="Chippy2" />
-          <LightboxImage :image="Cardinals2" />
+          <img v-lazy="Chippy" />
+          <img v-lazy="Goldenrod2" />
+          <img v-lazy="Asters" />
+          <img v-lazy="Monarchs" />
+          <img v-lazy="Conehead" />
+          <img v-lazy="Toads" />
+          <img v-lazy="River" />
+          <img v-lazy="Chippy2" />
+          <img v-lazy="Cardinals2" />
         </div>
         <div class="col item">
-          <LightboxImage :image="All2" />
-          <LightboxImage :image="WhiteRot" />
-          <LightboxImage :image="Mycellium" />
-          <LightboxImage :image="Gigi" />
-          <LightboxImage :image="BES" />
-          <LightboxImage :image="Cardinals" />
-          <LightboxImage :image="Milkweed2" />
-          <LightboxImage :image="Rabbits" />
-          <LightboxImage :image="Toads2" />
+          <img v-lazy="All2" />
+          <img v-lazy="WhiteRot" />
+          <img v-lazy="Mycellium" />
+          <img v-lazy="Gigi" />
+          <img v-lazy="BES" />
+          <img v-lazy="Cardinals" />
+          <img v-lazy="Milkweed2" />
+          <img v-lazy="Rabbits" />
+          <img v-lazy="Toads2" />
         </div>
         <div class="col item">
-          <LightboxImage :image="All" />
-          <LightboxImage :image="Cottonwood" />
-          <LightboxImage :image="Bluejays" />
-          <LightboxImage :image="Milkweed" />
-          <LightboxImage :image="Goldenrod" />
-          <LightboxImage :image="Monarchs2" />
-          <LightboxImage :image="Squirrels" />
-          <LightboxImage :image="Sparrows" />
-          <LightboxImage :image="Cardinals3" />
+          <img v-lazy="All" />
+          <img v-lazy="Cottonwood" />
+          <img v-lazy="Bluejays" />
+          <img v-lazy="Milkweed" />
+          <img v-lazy="Goldenrod" />
+          <img v-lazy="Monarchs2" />
+          <img v-lazy="Squirrels" />
+          <img v-lazy="Sparrows" />
+          <img v-lazy="Cardinals3" />
         </div>
       </div>
     </div>

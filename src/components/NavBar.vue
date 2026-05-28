@@ -66,11 +66,11 @@ function copyText() {
             </div>
 
             <ul class="accordion-body" role="tabpanel" v-if="paintingOpen">
+              <li><RouterLink to="/paintings">Non-Series Paintings</RouterLink></li>
+              <li><RouterLink to="/available">Available Work</RouterLink></li>
               <li>
                 <RouterLink to="/mitosis">Mitosis</RouterLink>
               </li>
-              <li><RouterLink to="/paintings">Non-Series Paintings</RouterLink></li>
-              <li><RouterLink to="/available">Available Work</RouterLink></li>
             </ul>
           </div>
           <div class="accordion-item">

@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import Olek1 from '../../assets/img/murals/olek_mural.png'
-import LightboxImage from '../../components/LightboxImage.vue'
 import Logperch from '../../assets/img/murals/logperch_cropped.png'
 import Dunes2 from '../../assets/img/murals/dunes-mural2.jpg'
 import Logperch_Trans from '../../assets/img/murals/logperch_trans.png'
@@ -25,14 +24,14 @@ import Logperch_Trans from '../../assets/img/murals/logperch_trans.png'
       <div class="lighbox-gallery">
         <div class="two-img">
           <div>
-            <LightboxImage
-              :image="Dunes2"
+            <img
+              v-lazy="Dunes2"
               alt="Painting of Lake Michigan dunes at sunset with a pitcher's thistle and monarch in the foreground."
             />
           </div>
           <div>
-            <LightboxImage
-              :image="Logperch"
+            <img
+              v-lazy="Logperch"
               alt="Painting of a logperch attached to 6th st. bridge in Grand Rapids, MI"
             />
           </div>

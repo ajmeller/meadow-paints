@@ -10,6 +10,7 @@ import IndoorFish from '../assets/img/paintings/indoor-fish.jpg'
 import Chip from '../assets/img/paintings/chippy.jpg'
 import FringedOrchid from '../assets/img/paintings/fringed-orchid.jpg'
 import Dunes from '../assets/img/murals/dunes-mural.jpg'
+import BigHeart from '../assets/img/paintings/big-heart.jpg'
 </script>
 
 <template>
@@ -40,7 +41,7 @@ import Dunes from '../assets/img/murals/dunes-mural.jpg'
             :image="Chip"
             caption='Oil on wood panel | Approx. 5.5" x 3.5" x 0.75" | $1--'
           />
-          <!-- big heart 8" x 4.5" x 0.75, cardinal is same as chip -->
+          <!-- cardinal is same as chip -->
         </div>
 
         <div class="col item">
@@ -69,6 +70,10 @@ import Dunes from '../assets/img/murals/dunes-mural.jpg'
           <LightboxImage
             :image="Everything"
             caption="Everything is everything | Acrylic on wood panel | $--"
+          />
+          <LightboxImage
+            :image="BigHeart"
+            caption='Big Heart | Oil on wood panel | 8" x 4.5" x 0.75 | $1--'
           />
         </div>
       </div>
