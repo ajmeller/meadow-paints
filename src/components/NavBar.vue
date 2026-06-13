@@ -66,11 +66,12 @@ function copyText() {
             </div>
 
             <ul class="accordion-body" role="tabpanel" v-if="paintingOpen">
-              <li><RouterLink to="/paintings">Non-Series Paintings</RouterLink></li>
-              <li><RouterLink to="/available">Available Work</RouterLink></li>
+              <li><RouterLink to="/species">Species Studies</RouterLink></li>
               <li>
                 <RouterLink to="/mitosis">Mitosis</RouterLink>
               </li>
+              <li><RouterLink to="/paintings">Non-Series Paintings</RouterLink></li>
+              <li><RouterLink to="/available">Available Work</RouterLink></li>
             </ul>
           </div>
           <div class="accordion-item">
@@ -189,7 +190,7 @@ img.logo {
 }
 
 .clear-btn {
-  height: 60px;
+  height: 52px;
   display: flex;
   align-items: center;
   justify-content: flex-end;

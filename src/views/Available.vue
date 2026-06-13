@@ -2,15 +2,15 @@
 import LightboxImage from '../components/LightboxImage.vue'
 import Tidepool from '../assets/img/paintings/tidepool.jpg'
 import Everything from '../assets/img/paintings/everything.jpg'
-import Pollen from '../assets/img/mitosis/pollen.png'
+import Pollen from '../assets/img/mitosis/pollen.jpg'
 import Belong from '../assets/img/mitosis/Belong.jpg'
 import BeachFossils from '../assets/img/mitosis/beach-fossils.jpg'
 import Egg from '../assets/img/mitosis/egg.jpg'
-import IndoorFish from '../assets/img/paintings/indoor-fish.jpg'
-import Chip from '../assets/img/paintings/chippy.jpg'
-import FringedOrchid from '../assets/img/paintings/fringed-orchid.jpg'
+import IndoorFish from '../assets/img/species/indoor-fish.jpg'
+import Lucky from '../assets/img/species/lucky.jpg'
+import FringedOrchid from '../assets/img/species/fringed-orchid.jpg'
 import Dunes from '../assets/img/murals/dunes-mural.jpg'
-import BigHeart from '../assets/img/paintings/big-heart.jpg'
+import BigHeart from '../assets/img/species/big-heart.jpg'
 </script>
 
 <template>
@@ -38,8 +38,8 @@ import BigHeart from '../assets/img/paintings/big-heart.jpg'
             caption="The Dunes | Latex paint on wood board | Can be placed outside | 4' x 4' | $3--"
           />
           <LightboxImage
-            :image="Chip"
-            caption='Oil on wood panel | Approx. 5.5" x 3.5" x 0.75" | $1--'
+            :image="Lucky"
+            caption='Oil on wood panel | Approx. 5.5" x 3.5" x 0.75" | $--'
           />
           <!-- cardinal is same as chip -->
         </div>
@@ -65,11 +65,11 @@ import BigHeart from '../assets/img/paintings/big-heart.jpg'
         <div class="col item">
           <LightboxImage
             :image="FringedOrchid"
-            caption="Purple Fringed Orchid | Acrylic on wood panel | Approx. 3' x 1' | $2--"
+            caption='Purple Fringed Orchid | Acrylic on wood panel | Approx. 44" x 13.5" | $2--'
           />
           <LightboxImage
             :image="Everything"
-            caption="Everything is everything | Acrylic on wood panel | $--"
+            caption='Everything is everything | Acrylic on wood panel | 6" x 6.25" x 1.25" | $--'
           />
           <LightboxImage
             :image="BigHeart"

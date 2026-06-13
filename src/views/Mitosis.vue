@@ -3,7 +3,7 @@ import LightboxImage from '../components/LightboxImage.vue'
 import Mitosis from '../assets/img/mitosis/mitosis.jpg'
 import MitosisII from '../assets/img/mitosis/mitosis-ii.png'
 import Dropped from '../assets/img/mitosis/dropped.png'
-import Pollen from '../assets/img/mitosis/pollen.png'
+import Pollen from '../assets/img/mitosis/pollen.jpg'
 import Belong from '../assets/img/mitosis/Belong.jpg'
 import BeachFossils from '../assets/img/mitosis/beach-fossils.jpg'
 import Commune from '../assets/img/mitosis/commune.png'
@@ -26,21 +26,21 @@ const carouselConfig = {
       <Slide :key="0">
         <LightboxImage
           :image="MitosisII"
-          caption="Mitosis II, acrylic on wood board. 2023."
+          caption="Mitosis II | Acrylic on wood | 2023"
           :is-lazy="false"
         />
       </Slide>
       <Slide :key="1">
         <LightboxImage
           :image="Dropped"
-          caption="(Dropped my) jelly donut, acrylic on wood board. 2023."
+          caption="(Dropped my) jelly donut | Acrylic on wood | 2023"
           :is-lazy="false"
         />
       </Slide>
       <Slide :key="2">
         <LightboxImage
           :image="Commune"
-          caption="Commune, acrylic on wood board. 2023."
+          caption="Commune | Acrylic on wood | 2023"
           :is-lazy="false"
         />
       </Slide>
@@ -48,35 +48,31 @@ const carouselConfig = {
       <Slide :key="3">
         <LightboxImage
           :image="CytoplasmCity"
-          caption="Cytoplasm City, acrylic on wood board. 2023."
+          caption="Cytoplasm City | Acrylic on wood | 2023"
           :is-lazy="false"
         />
       </Slide>
       <Slide :key="4">
         <LightboxImage
           :image="Cytoplasm"
-          caption="Cytoplasm, acrylic on wood board. 2023."
+          caption="Cytoplasm | Acrylic on wood | 2023"
           :is-lazy="false"
       /></Slide>
 
       <Slide :key="5">
-        <LightboxImage
-          :image="Belong"
-          caption="Belong?, oil on wood board. 2024."
-          :is-lazy="false"
-        />
+        <LightboxImage :image="Belong" caption="Belong? | Oil on wood | 2024" :is-lazy="false" />
       </Slide>
       <Slide :key="6" class="egg">
         <LightboxImage
           :image="Egg"
-          caption="The Egg, acrylic and oil on wood board. 2025."
+          caption="The Egg | Acrylic and oil on wood | 2025"
           :is-lazy="false"
         />
       </Slide>
       <Slide :key="7">
         <LightboxImage
           :image="Pollen"
-          caption="Pollen, oil on wood board. 2024."
+          caption="Pollen | Oil on wood board | 2026"
           :is-lazy="false"
         />
       </Slide>
@@ -84,14 +80,14 @@ const carouselConfig = {
       <Slide :key="8">
         <LightboxImage
           :image="BeachFossils"
-          caption="Beach Fossils, oil on wood board. 2024."
+          caption="Beach Fossils | Oil on wood | 2024"
           :is-lazy="false"
         />
       </Slide>
       <Slide :key="9">
         <LightboxImage
           :image="Mitosis"
-          caption="Mitosis, acrylic on cradled wood panel. 2022."
+          caption="Mitosis | Acrylic on cradled wood | 2022"
           :is-lazy="false"
         />
       </Slide>

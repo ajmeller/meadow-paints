@@ -4,7 +4,6 @@ import Sylvan from '../assets/img/paintings/sylvan.png'
 import Remus from '../assets/img/paintings/remus.png'
 import Sunset from '../assets/img/paintings/sunset-in-candy.png'
 import Hi from '../assets/img/paintings/hi.jpg'
-import IndoorFish from '../assets/img/paintings/indoor-fish.jpg'
 import dave from '../assets/img/paintings/dave.jpg'
 import Gibby from '../assets/img/paintings/gibby.jpg'
 import LeafFallDay from '../assets/img/paintings/leaf-fall-day.jpg'
@@ -20,12 +19,8 @@ import Snoozin from '../assets/img/paintings/snoozin.jpg'
 import Tidepool from '../assets/img/paintings/tidepool.jpg'
 import ColdToes from '../assets/img/paintings/cold-toes.png'
 import Everything from '../assets/img/paintings/everything.jpg'
-import FringedOrchid from '../assets/img/paintings/fringed-orchid.jpg'
-import Chippy from '../assets/img/paintings/chippy.jpg'
-import BigHeart from '../assets/img/paintings/big-heart.jpg'
 import Carefully from '../assets/img/paintings/carefully.png'
 import Dunes from '../assets/img/murals/dunes-mural.jpg'
-import Logperch_Trans from '../assets/img/murals/logperch_trans.png'
 </script>
 
 <template>
@@ -34,12 +29,12 @@ import Logperch_Trans from '../assets/img/murals/logperch_trans.png'
       <div class="grid">
         <div class="col item">
           <LightboxImage
-            :image="FringedOrchid"
-            caption="Purple Fringed Orchid | Acrylic on wood | 2025 | Available"
+            :image="Remus"
+            alt="Painting of a cat in monochromatic pink"
+            caption="Remus | Oil on wood | 2025"
           />
           <LightboxImage :image="ThreePigs" caption="Three pigs | Acrylic on wood | 2023." />
           <LightboxImage :image="ColdToes" caption="Cold Toes | Digital painting | 2026" />
-          <LightboxImage :image="Logperch_Trans" caption="Loggy | Acrylic on wood | 2024" />
           <LightboxImage
             :image="Sylvan"
             caption="Sylvan | Acrylic on wood | 2022"
@@ -60,33 +55,20 @@ import Logperch_Trans from '../assets/img/murals/logperch_trans.png'
             caption="Pitcher's Thistle On Dune | Acrylic on plaster board | 2025 | Available"
             alt="Painting of Lake Michigan dunes at sunset with a pitcher's thistle and monarch in the foreground."
           />
-          <LightboxImage :image="BigHeart" caption="Big Heart | Oil on wood | 2026 | Available" />
-
-          <LightboxImage :image="Chippy" caption="Chip | Oil on wood | 2026 | Available" />
           <LightboxImage
             :image="Everything"
             caption="Everything is everything | Acrylic on wood | 2025 | Available"
           />
           <LightboxImage :image="LotusEater" caption="Lotus eater | Digital painting | 2023" />
           <LightboxImage :image="Earth" caption="Earth | Acrylic on wood | 2023" />
-          <LightboxImage
-            :image="Remus"
-            alt="Painting of a cat in monochromatic pink"
-            caption="Remus | Oil on wood | 2025"
-          />
+
           <LightboxImage :image="SamsFire" caption="Sam's Fire | Digital painting | 2022" />
           <LightboxImage :image="LeafFallDay" caption="Leaf Fall Day | Digital painting | 2026" />
           <LightboxImage :image="Iris" caption="Iris | Digital painting | 2021" />
         </div>
 
         <div class="col item">
-          <LightboxImage
-            :image="IndoorFish"
-            caption="Indoor Fish | Oil on wood | 2025 | Available"
-            alt="Painting of banded killifish"
-          />
           <LightboxImage :image="Tidepool" caption="Tidepool | Oil on wood | 2025 | Available" />
-
           <LightboxImage :image="BigBright" caption="Big Bright! | Acrylic on wood | 2022" />
           <LightboxImage
             :image="Sunset"
@@ -104,7 +86,6 @@ import Logperch_Trans from '../assets/img/murals/logperch_trans.png'
             alt="Painting of two capybaras in a grassy landscape in cool colors"
             caption="hi | Acrylic on wood | 2022"
           />
-
           <LightboxImage
             :image="Carefully"
             caption="Carefully orchestrated to LOOK casual | Digital painting | 2022"

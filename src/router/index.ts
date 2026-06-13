@@ -7,6 +7,8 @@ import Paintings from '../views/Paintings.vue'
 import Murals from '../views/murals/Murals.vue'
 import Available from '../views/Available.vue'
 import Illustrations from '../views/Illustrations.vue'
+import Species from '../views/Species.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -50,6 +52,11 @@ const router = createRouter({
       path: '/illustration',
       name: 'Illustration',
       component: Illustrations,
+    },
+    {
+      path: '/species',
+      name: 'Species',
+      component: Species,
     },
   ],
 })
