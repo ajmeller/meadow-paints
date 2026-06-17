@@ -11,6 +11,7 @@ import Lucky from '../assets/img/species/lucky.jpg'
 import FringedOrchid from '../assets/img/species/fringed-orchid.jpg'
 import Dunes from '../assets/img/murals/dunes-mural.jpg'
 import BigHeart from '../assets/img/species/big-heart.jpg'
+import Neighbor from '../assets/img/species/neighbor_full.jpg'
 </script>
 
 <template>
@@ -34,17 +35,24 @@ import BigHeart from '../assets/img/species/big-heart.jpg'
             caption='Tidepool | Oil on wood panel | Approx. 5.25" x 7" x 0.75" | $1--'
           />
           <LightboxImage
+            :image="Egg"
+            caption='The Egg | Acrylic and oil on wood board | Approx. 2.5" x 7" x 0.6" | $1--'
+          />
+        </div>
+
+        <div class="col item">
+          <LightboxImage
             :image="Dunes"
             caption="The Dunes | Latex paint on wood board | Can be placed outside | 4' x 4' | $3--"
           />
           <LightboxImage
             :image="Lucky"
-            caption='Oil on wood panel | Approx. 5.5" x 3.5" x 0.75" | $--'
+            caption='Lucky | Oil on wood panel | Approx. 5.5" x 3.5" x 0.75" | $--'
           />
-          <!-- cardinal is same as chip -->
-        </div>
-
-        <div class="col item">
+          <LightboxImage
+            :image="Neighbor"
+            caption='Neighbor | Oil on wood panel | Approx. 5.5" x 3.5" x 0.75" | $--'
+          />
           <LightboxImage
             :image="Belong"
             caption='Belong? | Oil on wood board | 5.5" diameter, 0.75" depth | $1--'
@@ -56,10 +64,6 @@ import BigHeart from '../assets/img/species/big-heart.jpg'
           <LightboxImage
             :image="Pollen"
             caption='Pollen | Oil on wood board | 4" diameter, 0.75" depth | $--'
-          />
-          <LightboxImage
-            :image="Egg"
-            caption='The Egg | Acrylic and oil on wood board | Approx. 2.5" x 7" x 0.6" | $1--'
           />
         </div>
         <div class="col item">

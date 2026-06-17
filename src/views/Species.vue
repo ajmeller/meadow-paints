@@ -5,6 +5,7 @@ import FringedOrchid from '../assets/img/species/fringed-orchid.jpg'
 import Lucky from '../assets/img/species/lucky.jpg'
 import BigHeart from '../assets/img/species/big-heart.jpg'
 import Logperch_Trans from '../assets/img/species/logperch_trans.png'
+import Neighbor from '../assets/img/species/neighbor_full.jpg'
 </script>
 
 <template>
@@ -38,6 +39,10 @@ import Logperch_Trans from '../assets/img/species/logperch_trans.png'
             :image="IndoorFish"
             caption="Indoor Fish | Banded Killifish (Fundulus diaphanus) | Oil on wood | 2025"
             alt="Painting of banded killifish"
+          />
+          <LightboxImage
+            :image="Neighbor"
+            caption="Neighbor | Northern Cardinal (Cardinalis cardinalis) | Oil on wood | 2026"
           />
         </div>
       </div>
