@@ -2,7 +2,7 @@
 import Olek1 from '../../assets/img/murals/olek_mural.png'
 import Logperch from '../../assets/img/murals/logperch_cropped.png'
 import Dunes2 from '../../assets/img/murals/dunes-mural2.jpg'
-import Logperch_Trans from '../../assets/img/species/logperch_trans.png'
+import Logperch_Trans from '../../assets/img/taxonomy/logperch_trans.png'
 </script>
 
 <template>

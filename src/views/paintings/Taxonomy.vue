@@ -1,15 +1,18 @@
 <script setup lang="ts">
-import LightboxImage from '../components/LightboxImage.vue'
-import IndoorFish from '../assets/img/species/indoor-fish.jpg'
-import FringedOrchid from '../assets/img/species/fringed-orchid.jpg'
-import Lucky from '../assets/img/species/lucky.jpg'
-import BigHeart from '../assets/img/species/big-heart.jpg'
-import Logperch_Trans from '../assets/img/species/logperch_trans.png'
-import Neighbor from '../assets/img/species/neighbor_full.jpg'
+import LightboxImage from '../../components/LightboxImage.vue'
+import IndoorFish from '../../assets/img/taxonomy/indoor-fish.jpg'
+import FringedOrchid from '../../assets/img/taxonomy/fringed-orchid.jpg'
+import Lucky from '../../assets/img/taxonomy/lucky.jpg'
+import BigHeart from '../../assets/img/taxonomy/big-heart.jpg'
+import Logperch_Trans from '../../assets/img/taxonomy/logperch_trans.png'
+import Neighbor from '../../assets/img/taxonomy/neighbor_full.jpg'
 </script>
 
 <template>
   <div class="page-content white-bg">
+    <div class="heading">Taxonomy, 2024-</div>
+    <div class="description"></div>
+
     <div class="lighbox-gallery">
       <div class="grid">
         <div class="col item">

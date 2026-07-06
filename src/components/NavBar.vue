@@ -66,7 +66,7 @@ function copyText() {
             </div>
 
             <ul class="accordion-body" role="tabpanel" v-if="paintingOpen">
-              <li><RouterLink to="/species">Species Studies</RouterLink></li>
+              <li><RouterLink to="/taxonomy">Taxonomy</RouterLink></li>
               <li>
                 <RouterLink to="/mitosis">Mitosis</RouterLink>
               </li>
