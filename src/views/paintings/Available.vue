@@ -10,7 +10,6 @@ import IndoorFish from '../../assets/img/taxonomy/indoor-fish.jpg'
 import Lucky from '../../assets/img/taxonomy/lucky.jpg'
 import FringedOrchid from '../../assets/img/taxonomy/fringed-orchid.jpg'
 import Dunes from '../../assets/img/murals/dunes-mural.jpg'
-import BigHeart from '../../assets/img/taxonomy/big-heart.jpg'
 import Neighbor from '../../assets/img/taxonomy/neighbor_full.jpg'
 </script>
 
@@ -61,10 +60,6 @@ import Neighbor from '../../assets/img/taxonomy/neighbor_full.jpg'
             :image="BeachFossils"
             caption='Beach Fossils | Oil on wood board | 3.5" x 3.5" x 0.75" | $--'
           />
-          <LightboxImage
-            :image="Pollen"
-            caption='Pollen | Oil on wood board | 4" diameter, 0.75" depth | $--'
-          />
         </div>
         <div class="col item">
           <LightboxImage
@@ -76,8 +71,8 @@ import Neighbor from '../../assets/img/taxonomy/neighbor_full.jpg'
             caption='Everything is everything | Acrylic on wood panel | 6" x 6.25" x 1.25" | $--'
           />
           <LightboxImage
-            :image="BigHeart"
-            caption='Big Heart | Oil on wood panel | 8" x 4.5" x 0.75 | $1--'
+            :image="Pollen"
+            caption='Pollen | Oil on wood board | 4" diameter, 0.75" depth | $--'
           />
         </div>
       </div>
