@@ -6,10 +6,10 @@ import Pollen from '../../assets/img/mitosis/pollen.jpg'
 import Belong from '../../assets/img/mitosis/Belong.jpg'
 import BeachFossils from '../../assets/img/mitosis/beach-fossils.jpg'
 import Egg from '../../assets/img/mitosis/egg.jpg'
-import IndoorFish from '../../assets/img/taxonomy/indoor-fish.jpg'
+import IndoorFish from '../../assets/img/taxonomy/indoor-fish.jpeg'
 import Lucky from '../../assets/img/taxonomy/lucky.jpg'
 import FringedOrchid from '../../assets/img/taxonomy/fringed-orchid.jpg'
-import Dunes from '../../assets/img/murals/dunes-mural.jpg'
+import Dunes from '../../assets/img/murals/dunes-mural.jpeg'
 import Neighbor from '../../assets/img/taxonomy/neighbor_full.jpg'
 </script>
 

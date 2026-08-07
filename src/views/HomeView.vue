@@ -10,9 +10,9 @@
       <a href="/paintings" class="sam"> <img src="../assets/img/paintings/sams-fire.png" /></a>
       <a href="/mitosis" class="dropped"> <img src="../assets/img/mitosis/dropped.png" /></a>
       <a href="/available" class="killifish">
-        <img src="../assets/img/taxonomy/indoor-fish.jpg"
+        <img src="../assets/img/taxonomy/indoor-fish.jpeg"
       /></a>
-      <a href="/illustration" class="dunes"> <img src="../assets/img/murals/dunes-mural.jpg" /></a>
+      <a href="/illustration" class="dunes"> <img src="../assets/img/murals/dunes-mural.jpeg" /></a>
     </section>
   </main>
 </template>

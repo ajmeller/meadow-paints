@@ -20,7 +20,10 @@ import Tidepool from '../../assets/img/paintings/tidepool.jpg'
 import ColdToes from '../../assets/img/paintings/cold-toes.png'
 import Everything from '../../assets/img/paintings/everything.jpg'
 import Carefully from '../../assets/img/paintings/carefully.png'
-import Dunes from '../../assets/img/murals/dunes-mural.jpg'
+import Dunes from '../../assets/img/murals/dunes-mural.jpeg'
+import Heaven from '../../assets/img/paintings/heaven.jpeg'
+import Gem from '../../assets/img/paintings/gem.jpeg'
+import Milkweed from '../../assets/img/paintings/milkweed.jpeg'
 </script>
 
 <template>
@@ -33,7 +36,7 @@ import Dunes from '../../assets/img/murals/dunes-mural.jpg'
             alt="Painting of a cat in monochromatic pink"
             caption="Remus | Oil on wood | 2025"
           />
-          <LightboxImage :image="ThreePigs" caption="Three pigs | Acrylic on wood | 2023." />
+          <LightboxImage :image="ThreePigs" caption="Three pigs | Acrylic on wood | 2023" />
           <LightboxImage :image="ColdToes" caption="Cold Toes | Digital painting | 2026" />
           <LightboxImage
             :image="Sylvan"
@@ -47,9 +50,11 @@ import Dunes from '../../assets/img/murals/dunes-mural.jpg'
           />
           <LightboxImage :image="AllOver" caption="All Over | Digital painting | 2020" />
           <LightboxImage :image="NeonSurf" caption="In the neon surf | Digital painting | 2023" />
+          <LightboxImage :image="Iris" caption="Iris | Digital painting | 2021" />
         </div>
 
         <div class="col item">
+          <LightboxImage :image="Heaven" caption="Heaven is a summer | Digital painting | 2026" />
           <LightboxImage
             :image="Dunes"
             caption="Pitcher's Thistle On Dune | Acrylic on plaster board | 2025 | Available"
@@ -59,12 +64,12 @@ import Dunes from '../../assets/img/murals/dunes-mural.jpg'
             :image="Everything"
             caption="Everything is everything | Acrylic on wood | 2025 | Available"
           />
+          <LightboxImage :image="Gem" caption="Gem | Digital painting | 2026" />
           <LightboxImage :image="LotusEater" caption="Lotus eater | Digital painting | 2023" />
           <LightboxImage :image="Earth" caption="Earth | Acrylic on wood | 2023" />
-
+          <LightboxImage :image="Milkweed" caption="Milkweed | Digital painting | 2026" />
           <LightboxImage :image="SamsFire" caption="Sam's Fire | Digital painting | 2022" />
           <LightboxImage :image="LeafFallDay" caption="Leaf Fall Day | Digital painting | 2026" />
-          <LightboxImage :image="Iris" caption="Iris | Digital painting | 2021" />
         </div>
 
         <div class="col item">
@@ -80,6 +85,7 @@ import Dunes from '../../assets/img/murals/dunes-mural.jpg'
             alt="Painting of a bleping cat in monochromatic pink"
             caption="Gibby | Oil on wood | 2025"
           />
+
           <LightboxImage :image="Snoozin" caption="Snoozin' | Acrylic on canvas | 2019" />
           <LightboxImage
             :image="Hi"

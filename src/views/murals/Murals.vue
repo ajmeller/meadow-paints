@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Olek1 from '../../assets/img/murals/olek_mural.png'
 import Logperch from '../../assets/img/murals/logperch_cropped.png'
-import Dunes2 from '../../assets/img/murals/dunes-mural2.jpg'
+import Dunes2 from '../../assets/img/murals/dunes-mural2.jpeg'
 import Logperch_Trans from '../../assets/img/taxonomy/logperch_trans.png'
 </script>
 
