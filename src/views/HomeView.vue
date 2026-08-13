@@ -3,7 +3,7 @@
     <section class="portfolio-block">
       <div class="heading">Meadow Paints</div>
       <a href="/highland" class="chippy"> <img src="../assets/img/posts/chippy.png" /></a>
-      <a href="/about" class="belong"> <img src="../assets/img/mitosis/Belong.jpg" /></a>
+      <a href="/about" class="belong"> <img src="../assets/img/mitosis/belong.jpeg" /></a>
       <a href="/murals" class="logperch">
         <img src="../assets/img/murals/logperch_cropped.png"
       /></a>

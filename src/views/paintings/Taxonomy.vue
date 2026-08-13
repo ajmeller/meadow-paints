@@ -2,10 +2,10 @@
 import LightboxImage from '../../components/LightboxImage.vue'
 import IndoorFish from '../../assets/img/taxonomy/indoor-fish.jpeg'
 import FringedOrchid from '../../assets/img/taxonomy/fringed-orchid_trans.jpeg'
-import Lucky from '../../assets/img/taxonomy/lucky.jpg'
+import Lucky from '../../assets/img/taxonomy/lucky.jpeg'
 import BigHeart from '../../assets/img/taxonomy/big-heart.jpeg'
 import Logperch_Trans from '../../assets/img/taxonomy/logperch_trans.png'
-import Neighbor from '../../assets/img/taxonomy/neighbor_full.jpg'
+import Neighbor from '../../assets/img/taxonomy/neighbor_full.jpeg'
 </script>
 
 <template>

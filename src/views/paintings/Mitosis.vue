@@ -3,12 +3,12 @@ import LightboxImage from '../../components/LightboxImage.vue'
 import Mitosis from '../../assets/img/mitosis/mitosis.jpg'
 import MitosisII from '../../assets/img/mitosis/mitosis-ii.png'
 import Dropped from '../../assets/img/mitosis/dropped.png'
-import Pollen from '../../assets/img/mitosis/pollen.jpg'
-import Belong from '../../assets/img/mitosis/Belong.jpg'
-import BeachFossils from '../../assets/img/mitosis/beach-fossils.jpg'
-import Commune from '../../assets/img/mitosis/commune.png'
-import Cytoplasm from '../../assets/img/mitosis/cytoplasm.jpeg'
-import Egg from '../../assets/img/mitosis/egg.jpg'
+import Pollen from '../../assets/img/mitosis/pollen.jpeg'
+import Belong from '../../assets/img/mitosis/belong.jpeg'
+import BeachFossils from '../../assets/img/mitosis/beach-fossils_full.jpeg'
+import Commune from '../../assets/img/mitosis/commune_full.jpeg'
+import Cytoplasm from '../../assets/img/mitosis/cytoplasm_full.jpeg'
+import Egg from '../../assets/img/mitosis/egg_full2.jpeg'
 import CytoplasmCity from '../../assets/img/mitosis/cytoplasm-city.png'
 import 'vue3-carousel/carousel.css'
 import { Carousel, Slide, Navigation } from 'vue3-carousel'
@@ -31,45 +31,16 @@ const carouselConfig = {
         />
       </Slide>
       <Slide :key="1">
-        <LightboxImage
-          :image="Dropped"
-          caption="(Dropped my) jelly donut | Acrylic on wood | 2023"
-          :is-lazy="false"
-        />
-      </Slide>
-      <Slide :key="2">
-        <LightboxImage
-          :image="Commune"
-          caption="Commune | Acrylic on wood | 2023"
-          :is-lazy="false"
-        />
-      </Slide>
-
-      <Slide :key="3">
-        <LightboxImage
-          :image="CytoplasmCity"
-          caption="Cytoplasm City | Acrylic on wood | 2023"
-          :is-lazy="false"
-        />
-      </Slide>
-      <Slide :key="4">
-        <LightboxImage
-          :image="Cytoplasm"
-          caption="Cytoplasm | Acrylic on wood | 2023"
-          :is-lazy="false"
-      /></Slide>
-
-      <Slide :key="5">
         <LightboxImage :image="Belong" caption="Belong? | Oil on wood | 2024" :is-lazy="false" />
       </Slide>
-      <Slide :key="6" class="egg">
+      <Slide :key="2" class="egg">
         <LightboxImage
           :image="Egg"
           caption="The Egg | Acrylic and oil on wood | 2025"
           :is-lazy="false"
         />
       </Slide>
-      <Slide :key="7">
+      <Slide :key="3">
         <LightboxImage
           :image="Pollen"
           caption="Pollen | Oil on wood board | 2026"
@@ -77,13 +48,44 @@ const carouselConfig = {
         />
       </Slide>
 
-      <Slide :key="8">
+      <Slide :key="4">
         <LightboxImage
           :image="BeachFossils"
           caption="Beach Fossils | Oil on wood | 2024"
           :is-lazy="false"
         />
       </Slide>
+      <Slide :key="5">
+        <LightboxImage
+          :image="Cytoplasm"
+          caption="Cytoplasm | Acrylic on wood | 2023"
+          :is-lazy="false"
+        />
+      </Slide>
+
+      <Slide :key="6">
+        <LightboxImage
+          :image="Commune"
+          caption="Commune | Acrylic on wood | 2023"
+          :is-lazy="false"
+        />
+      </Slide>
+      <Slide :key="7">
+        <LightboxImage
+          :image="CytoplasmCity"
+          caption="Cytoplasm City | Acrylic on wood | 2023"
+          :is-lazy="false"
+        />
+      </Slide>
+
+      <Slide :key="8">
+        <LightboxImage
+          :image="Dropped"
+          caption="(Dropped my) jelly donut | Acrylic on wood | 2023"
+          :is-lazy="false"
+        />
+      </Slide>
+
       <Slide :key="9">
         <LightboxImage
           :image="Mitosis"
@@ -118,7 +120,7 @@ const carouselConfig = {
 
 .egg {
   img {
-    width: 40%;
+    width: 85%;
   }
 }
 
