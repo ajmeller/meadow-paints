@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 // function startDrag(event, id) {
 //   event.dataTransfer.effectAllowed = 'move'
 //   event.dataTransfer.setData('id', id)
@@ -22,7 +22,7 @@
 //     draggedEl.style.zIndex = 1000
 //   }
 // }
-</script>
+</script> -->
 
 <template>
   <main>
