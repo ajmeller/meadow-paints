@@ -1,27 +1,27 @@
 <script setup>
-function startDrag(event, id) {
-  event.dataTransfer.effectAllowed = 'move'
-  event.dataTransfer.setData('id', id)
-  event.dataTransfer.setData('layerX', event.layerX)
-  event.dataTransfer.setData('layerY', event.layerY)
+// function startDrag(event, id) {
+//   event.dataTransfer.effectAllowed = 'move'
+//   event.dataTransfer.setData('id', id)
+//   event.dataTransfer.setData('layerX', event.layerX)
+//   event.dataTransfer.setData('layerY', event.layerY)
 
-  const draggedEl = document.getElementById(id)
-  if (draggedEl) {
-    event.dataTransfer.setDragImage(draggedEl, event.layerX, event.layerY)
-  }
-}
+//   const draggedEl = document.getElementById(id)
+//   if (draggedEl) {
+//     event.dataTransfer.setDragImage(draggedEl, event.layerX, event.layerY)
+//   }
+// }
 
-function onDrop(event) {
-  const id = event.dataTransfer.getData('id')
-  const draggedEl = document.getElementById(id)
-  const layerX = event.dataTransfer.getData('layerX')
-  const layerY = event.dataTransfer.getData('layerY')
-  if (draggedEl) {
-    draggedEl.style.top = (event.clientY - Number(layerY)).toString() + 'px'
-    draggedEl.style.left = (event.clientX - Number(layerX)).toString() + 'px'
-    draggedEl.style.zIndex = 1000
-  }
-}
+// function onDrop(event) {
+//   const id = event.dataTransfer.getData('id')
+//   const draggedEl = document.getElementById(id)
+//   const layerX = event.dataTransfer.getData('layerX')
+//   const layerY = event.dataTransfer.getData('layerY')
+//   if (draggedEl) {
+//     draggedEl.style.top = (event.clientY - Number(layerY)).toString() + 'px'
+//     draggedEl.style.left = (event.clientX - Number(layerX)).toString() + 'px'
+//     draggedEl.style.zIndex = 1000
+//   }
+// }
 </script>
 
 <template>
@@ -30,12 +30,14 @@ function onDrop(event) {
     <section class="portfolio-block">
       <div class="heading">Meadow Paints</div>
 
-      <div class="drag-el jelly" id="0" @dragstart="startDrag($event, 0)">
-        <a href="/mitosis"> <img src="../assets/img/mitosis/dropped.jpeg" /></a>
-      </div>
-      <div class="drag-el killifish" id="1" @dragstart="startDrag($event, 1)">
-        <a href="/available" class=""> <img src="../assets/img/taxonomy/indoor-fish.jpeg" /></a>
-      </div>
+      <!-- <div class="drag-el jelly" id="0" @dragstart="startDrag($event, 0)"> -->
+      <a href="/mitosis" class="jelly"> <img src="../assets/img/mitosis/dropped.jpeg" /></a>
+      <!-- </div> -->
+      <!-- <div class="drag-el killifish" id="1" @dragstart="startDrag($event, 1)"> -->
+      <a href="/available" class="killifish">
+        <img src="../assets/img/taxonomy/indoor-fish.jpeg"
+      /></a>
+      <!-- </div> -->
 
       <a href="/about" class="belong"> <img src="../assets/img/mitosis/belong.jpeg" /></a>
       <a href="/paintings" class="sam"> <img src="../assets/img/paintings/sams-fire.jpeg" /></a>
