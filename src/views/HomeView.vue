@@ -1,18 +1,49 @@
+<script setup>
+function startDrag(event, id) {
+  event.dataTransfer.effectAllowed = 'move'
+  event.dataTransfer.setData('id', id)
+  event.dataTransfer.setData('layerX', event.layerX)
+  event.dataTransfer.setData('layerY', event.layerY)
+
+  const draggedEl = document.getElementById(id)
+  if (draggedEl) {
+    event.dataTransfer.setDragImage(draggedEl, event.layerX, event.layerY)
+  }
+}
+
+function onDrop(event) {
+  const id = event.dataTransfer.getData('id')
+  const draggedEl = document.getElementById(id)
+  const layerX = event.dataTransfer.getData('layerX')
+  const layerY = event.dataTransfer.getData('layerY')
+  if (draggedEl) {
+    draggedEl.style.top = (event.clientY - Number(layerY)).toString() + 'px'
+    draggedEl.style.left = (event.clientX - Number(layerX)).toString() + 'px'
+    draggedEl.style.zIndex = 1000
+  }
+}
+</script>
+
 <template>
   <main>
+    <!-- <main class="drop-zone" @drop="onDrop($event)" @dragover.prevent @dragenter.prevent> -->
     <section class="portfolio-block">
       <div class="heading">Meadow Paints</div>
-      <a href="/highland" class="chippy"> <img src="../assets/img/posts/chippy.png" /></a>
+
+      <div class="drag-el jelly" id="0" @dragstart="startDrag($event, 0)">
+        <a href="/mitosis"> <img src="../assets/img/mitosis/dropped.jpeg" /></a>
+      </div>
+      <div class="drag-el killifish" id="1" @dragstart="startDrag($event, 1)">
+        <a href="/available" class=""> <img src="../assets/img/taxonomy/indoor-fish.jpeg" /></a>
+      </div>
+
       <a href="/about" class="belong"> <img src="../assets/img/mitosis/belong.jpeg" /></a>
+      <a href="/paintings" class="sam"> <img src="../assets/img/paintings/sams-fire.jpeg" /></a>
       <a href="/murals" class="logperch">
-        <img src="../assets/img/murals/logperch_cropped.png"
-      /></a>
-      <a href="/paintings" class="sam"> <img src="../assets/img/paintings/sams-fire.png" /></a>
-      <a href="/mitosis" class="dropped"> <img src="../assets/img/mitosis/dropped.png" /></a>
-      <a href="/available" class="killifish">
-        <img src="../assets/img/taxonomy/indoor-fish.jpeg"
+        <img src="../assets/img/murals/logperch_cropped.jpeg"
       /></a>
       <a href="/illustration" class="dunes"> <img src="../assets/img/murals/dunes-mural.jpeg" /></a>
+      <a href="/highland" class="chippy"> <img src="../assets/img/posts/chippy.jpeg" /></a>
     </section>
   </main>
 </template>
@@ -31,7 +62,8 @@ img {
     margin-bottom: 40px;
   }
 
-  a {
+  a,
+  .drag-el {
     position: absolute;
 
     &:hover {
@@ -44,17 +76,17 @@ img {
   }
 
   .heading {
+    position: absolute;
     left: 2%;
     top: 1%;
     z-index: 100;
     font-size: 60px;
-    position: absolute;
   }
 
-  .dropped {
-    width: 260px;
+  .jelly {
     left: 7%;
     top: 13%;
+    width: 260px;
   }
 
   .belong {

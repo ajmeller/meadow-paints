@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import LightboxImage from '../../components/LightboxImage.vue'
-import Tidepool from '../../assets/img/paintings/tidepool.jpg'
+import Tidepool from '../../assets/img/paintings/tidepool.jpeg'
 import BeachFossils from '../../assets/img/mitosis/beach-fossils.jpeg'
 import Egg from '../../assets/img/mitosis/egg.jpeg'
 import IndoorFish from '../../assets/img/taxonomy/indoor-fish.jpeg'

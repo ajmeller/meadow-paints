@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Me2 from '../assets/img/ppme.jpg'
-import Me3 from '../assets/img/murals/olek_mural2.png'
+import Me3 from '../assets/img/murals/leaf-fall-day_mural2.jpeg'
 </script>
 
 <template>

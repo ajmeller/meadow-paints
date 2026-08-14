@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import LightboxImage from '../../components/LightboxImage.vue'
 import Mitosis from '../../assets/img/mitosis/mitosis.jpg'
-import MitosisII from '../../assets/img/mitosis/mitosis-ii.png'
-import Dropped from '../../assets/img/mitosis/dropped.png'
+import MitosisII from '../../assets/img/mitosis/mitosis-ii.jpeg'
+import Dropped from '../../assets/img/mitosis/dropped.jpeg'
 import Pollen from '../../assets/img/mitosis/pollen.jpeg'
 import Belong from '../../assets/img/mitosis/belong.jpeg'
 import BeachFossils from '../../assets/img/mitosis/beach-fossils_full.jpeg'
 import Commune from '../../assets/img/mitosis/commune_full.jpeg'
 import Cytoplasm from '../../assets/img/mitosis/cytoplasm_full.jpeg'
 import Egg from '../../assets/img/mitosis/egg_full2.jpeg'
-import CytoplasmCity from '../../assets/img/mitosis/cytoplasm-city.png'
+import CytoplasmCity from '../../assets/img/mitosis/cytoplasm-city.jpeg'
 import 'vue3-carousel/carousel.css'
 import { Carousel, Slide, Navigation } from 'vue3-carousel'
 
