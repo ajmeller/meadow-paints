@@ -4,7 +4,7 @@ import Tidepool from '../../assets/img/paintings/tidepool.jpeg'
 import BeachFossils from '../../assets/img/mitosis/beach-fossils.jpeg'
 import Egg from '../../assets/img/mitosis/egg.jpeg'
 import IndoorFish from '../../assets/img/taxonomy/indoor-fish.jpeg'
-import Lucky from '../../assets/img/taxonomy/lucky.jpeg'
+import Lucky from '../../assets/img/taxonomy/lucky_full3.jpeg'
 import FringedOrchid from '../../assets/img/taxonomy/fringed-orchid.jpg'
 import Dunes from '../../assets/img/murals/dunes-mural.jpeg'
 </script>
