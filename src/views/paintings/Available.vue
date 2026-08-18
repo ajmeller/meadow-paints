@@ -6,6 +6,8 @@ import Egg from '../../assets/img/mitosis/egg.jpeg'
 import IndoorFish from '../../assets/img/taxonomy/indoor-fish.jpeg'
 import Lucky from '../../assets/img/taxonomy/lucky_full3.jpeg'
 import FringedOrchid from '../../assets/img/taxonomy/fringed-orchid.jpg'
+import Liz from '../../assets/img/taxonomy/liz.jpeg'
+import Sal from '../../assets/img/taxonomy/sal.jpeg'
 import Dunes from '../../assets/img/murals/dunes-mural.jpeg'
 </script>
 
@@ -55,6 +57,8 @@ import Dunes from '../../assets/img/murals/dunes-mural.jpeg'
             :image="FringedOrchid"
             caption='Purple Fringed Orchid | Acrylic on wood panel | Approx. 44" x 13.5" | $3--'
           />
+          <LightboxImage :image="Liz" caption="Liz | Acrylic on wood panel | $1--" />
+          <LightboxImage :image="Sal" caption="Sal | Acrylic on wood panel | $1--" />
           <!-- <LightboxImage
             :image="Everything"
             caption='Everything is everything | Acrylic on wood panel | 6" x 6.25" x 1.25" | $--'

@@ -20,7 +20,7 @@ import Sal from '../../assets/img/taxonomy/sal_full1.jpeg'
         <LightboxImage
           :image="FringedOrchid"
           caption="Purple Fringed Orchid (Platanthera psycodes) | Acrylic on wood | 2025"
-          class="left-img"
+          klass="left-img"
         />
       </div>
       <div class="grid2">
