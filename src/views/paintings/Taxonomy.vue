@@ -22,45 +22,41 @@ import Sal from '../../assets/img/taxonomy/sal_full1.jpeg'
           caption="Purple Fringed Orchid (Platanthera psycodes) | Acrylic on wood | 2025"
           class="left-img"
         />
-        <LightboxImage
-          :image="Neighbor"
-          caption="Neighbor | Northern Cardinal (Cardinalis cardinalis) | Oil on wood | 2026"
-          class="left-img"
-        />
       </div>
       <div class="grid2">
         <LightboxImage
           :image="BigHeart"
-          class="span2"
           caption="Big Heart | Mummichog (Fundulus heteroclitus) | Oil on wood | 2026"
         />
         <LightboxImage
           :image="Lucky"
-          class="span2"
           caption="Lucky | Thirteen-lined ground squirrel (Ictidomys tridecemlineatus) | Oil on wood | 2026"
         />
 
         <LightboxImage
           :image="Logperch_Trans"
-          class="span2"
+          klass="span2"
           caption="Loggy | Logperch (Percina caprodes) | Acrylic on wood | 2024"
+        />
+        <LightboxImage
+          :image="Liz"
+          caption="Liz | Eastern Glass Lizard (Ophisaurus ventralis) | Acrylic on wood | 2026"
+          klass="span2"
+        />
+        <LightboxImage
+          :image="Sal"
+          caption="Sal | Longtail Salamander (Eurycea longicauda) | Acrylic on wood | 2026"
+          klass="span2"
         />
 
         <LightboxImage
           :image="IndoorFish"
           caption="Indoor Fish | Banded Killifish (Fundulus diaphanus) | Oil on wood | 2025"
           alt="Painting of banded killifish"
-          class="span2"
         />
         <LightboxImage
-          :image="Liz"
-          caption="Liz | Eastern Glass Lizard (Ophisaurus ventralis) | Acrylic on wood | 2026"
-          class="span2"
-        />
-        <LightboxImage
-          :image="Sal"
-          caption="Sal | Longtail Salamander (Eurycea longicauda) | Acrylic on wood | 2026"
-          class="span2"
+          :image="Neighbor"
+          caption="Neighbor | Northern Cardinal (Cardinalis cardinalis) | Oil on wood | 2026"
         />
       </div>
     </div>

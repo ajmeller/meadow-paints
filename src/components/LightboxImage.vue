@@ -9,7 +9,7 @@ defineProps({
   },
   caption: String,
   alt: String,
-  class: String,
+  klass: String,
   isLazy: { type: Boolean, default: true },
 })
 
@@ -29,7 +29,7 @@ function close(event: Event) {
     class="grid-img"
     v-lazy="{ src: image, loading: Placeholder }"
     :alt="alt"
-    :class="class"
+    :class="klass"
     @click="showLighbox = true"
   />
   <img
@@ -37,7 +37,7 @@ function close(event: Event) {
     class="grid-img"
     :src="image"
     :alt="alt"
-    :class="class"
+    :class="klass"
     @click="showLighbox = true"
   />
 
