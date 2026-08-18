@@ -267,5 +267,10 @@ ul.accordion-body {
   img.logo {
     width: 70px;
   }
+
+  .msg {
+    font-size: 14px;
+    max-width: 90vw;
+  }
 }
 </style>

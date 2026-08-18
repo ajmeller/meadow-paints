@@ -138,4 +138,17 @@ const carouselConfig = {
   --vc-nav-height: 40px;
   margin: 40px 0px 60px;
 }
+
+@media (max-width: 850px) {
+  .carousel__slide {
+    img {
+      width: 28vw;
+    }
+  }
+
+  .carousel__viewport {
+    width: 84%;
+    left: 8%;
+  }
+}
 </style>

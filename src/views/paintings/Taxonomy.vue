@@ -99,4 +99,18 @@ import Sal from '../../assets/img/taxonomy/sal_full1.jpeg'
     grid-column: 1 / 3;
   }
 }
+
+@media (max-width: 850px) {
+  .lightbox-gallery {
+    flex-direction: column-reverse;
+
+    .left-img {
+      width: 95vw;
+    }
+  }
+
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
