@@ -23,12 +23,6 @@ import Dunes from '../../assets/img/murals/dunes-mural.jpeg'
       <div class="grid">
         <div class="col item">
           <LightboxImage
-            :image="IndoorFish"
-            caption='Indoor Fish | Oil on wood board | Approx. 8.5" x 5" x 0.75" | $1--'
-            alt="Painting of banded killifish"
-          />
-
-          <LightboxImage
             :image="Egg"
             caption='The Egg | Acrylic and oil on wood board | Approx. 2.5" x 7" x 0.6" | $1--'
           />

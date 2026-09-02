@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import LightboxImage from '../components/LightboxImage.vue'
 import Bookmark from '../assets/img/illustration/bookmark.jpg'
+import Logo from '../assets/img/illustration/ducom.jpeg'
 
 function copyText() {
   navigator.clipboard.writeText('meadowpaintsart@gmail.com')
@@ -20,7 +21,13 @@ function copyText() {
         <div class="col item">
           <LightboxImage
             :image="Bookmark"
-            caption="Bookmark for Black Dog Books And Records in GR, MI"
+            caption="Bookmark | Black Dog Books And Records | Grand Rapids, MI"
+          />
+        </div>
+        <div class="col item">
+          <LightboxImage
+            :image="Logo"
+            caption="Logo | Drexel University College of Medicine Climbing Club | Philadelphia, PA"
           />
         </div>
       </div>
