@@ -111,44 +111,13 @@ const carouselConfig = {
 </template>
 
 <style>
-.carousel__slide {
-  img {
-    width: 35vw;
-    cursor: pointer;
-  }
-}
-
 .egg {
   img {
     width: 85%;
   }
 }
 
-.carousel__viewport {
-  width: 92%;
-  position: relative;
-  left: 4%;
-}
-
-.carousel {
-  --vc-nav-color: #463d3d;
-  --vc-nav-color-hover: #fb5098;
-  --vc-nav-border-radius: 50%;
-  --vc-nav-width: 40px;
-  --vc-nav-height: 40px;
-  margin: 40px 0px 60px;
-}
-
-@media (max-width: 850px) {
-  .carousel__slide {
-    img {
-      width: 28vw;
-    }
-  }
-
-  .carousel__viewport {
-    width: 84%;
-    left: 8%;
-  }
+.description {
+  margin: 20px 12px 0px;
 }
 </style>

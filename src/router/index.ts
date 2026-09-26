@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import About from '../views/About.vue'
-import Highland from '../views/murals/Highland.vue'
+import Public from '../views/Public.vue'
 import Mitosis from '../views/paintings/Mitosis.vue'
 import Paintings from '../views/paintings/Paintings.vue'
-import Murals from '../views/murals/Murals.vue'
+import Murals from '../views/Murals.vue'
 import Available from '../views/paintings/Available.vue'
 import Illustrations from '../views/Illustrations.vue'
 import Taxonomy from '../views/paintings/Taxonomy.vue'
@@ -29,9 +29,9 @@ const router = createRouter({
       component: Murals,
     },
     {
-      path: '/highland',
-      name: 'Highland',
-      component: Highland,
+      path: '/public',
+      name: 'Public',
+      component: Public,
     },
     {
       path: '/mitosis',

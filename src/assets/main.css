@@ -156,11 +156,43 @@ body {
     }
   }
 
+  .carousel__slide {
+    img {
+      width: 35vw;
+      cursor: pointer;
+    }
+  }
+
+  .carousel__viewport {
+    width: 92%;
+    position: relative;
+    left: 4%;
+  }
+
+  .carousel {
+    --vc-nav-color: #463d3d;
+    --vc-nav-color-hover: #fb5098;
+    --vc-nav-border-radius: 50%;
+    --vc-nav-width: 40px;
+    --vc-nav-height: 40px;
+  }
+
   @media (max-width: 850px) {
     .lighbox-gallery {
       .grid {
         grid-template-columns: 1fr;
       }
+    }
+
+    .carousel__slide {
+      img {
+        width: 28vw;
+      }
+    }
+
+    .carousel__viewport {
+      width: 84%;
+      left: 8%;
     }
   }
 }

@@ -5,22 +5,13 @@ import { RouterLink } from 'vue-router'
 const menuOpen: Ref<boolean> = ref(false)
 
 const paintingOpen: Ref<boolean> = ref(false)
-const muralsOpen: Ref<boolean> = ref(false)
 const contactOpen: Ref<boolean> = ref(false)
 
-function toggleAccordion(accordionName: 'paintings' | 'murals' | 'contact') {
+function toggleAccordion(accordionName: 'paintings' | 'contact') {
   switch (accordionName) {
     case 'paintings':
       paintingOpen.value = !paintingOpen.value
       if (paintingOpen.value === true) {
-        muralsOpen.value = false
-        contactOpen.value = false
-      }
-      break
-    case 'murals':
-      muralsOpen.value = !muralsOpen.value
-      if (muralsOpen.value === true) {
-        paintingOpen.value = false
         contactOpen.value = false
       }
       break
@@ -28,7 +19,6 @@ function toggleAccordion(accordionName: 'paintings' | 'murals' | 'contact') {
       contactOpen.value = !contactOpen.value
       if (contactOpen.value === true) {
         paintingOpen.value = false
-        muralsOpen.value = false
       }
       break
   }
@@ -74,17 +64,11 @@ function copyText() {
               <li><RouterLink to="/available">Available Work</RouterLink></li>
             </ul>
           </div>
-          <div class="accordion-item">
-            <div class="accordion-header" role="tab">
-              <button class="clear-btn" type="button" @click="toggleAccordion('murals')">
-                Murals & Public Art
-                <span class="material-icons">{{ muralsOpen ? 'expand_less' : 'expand_more' }}</span>
-              </button>
-            </div>
-            <ul class="accordion-body" role="tabpanel" v-if="muralsOpen">
-              <li><RouterLink to="/murals">Murals</RouterLink></li>
-              <li><RouterLink to="/highland">Park People</RouterLink></li>
-            </ul>
+          <div class="clear-btn">
+            <RouterLink to="/murals">Murals</RouterLink>
+          </div>
+          <div class="clear-btn">
+            <RouterLink to="/public">Public Art</RouterLink>
           </div>
           <div class="clear-btn">
             <RouterLink to="/illustration">Illustration</RouterLink>
