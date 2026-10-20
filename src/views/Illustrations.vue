@@ -4,7 +4,7 @@ import Bookmark from '../assets/img/illustration/bookmark.jpg'
 import Logo from '../assets/img/illustration/ducom.jpeg'
 
 function copyText() {
-  navigator.clipboard.writeText('meadowpaintsart@gmail.com')
+  navigator.clipboard.writeText('art@meadowpaints.com')
 }
 </script>
 
@@ -13,7 +13,7 @@ function copyText() {
     <div class="heading">Illustration</div>
     <div class="description">
       Email me at
-      <span class="copy" title="Click to copy" @click="copyText()"> meadowpaintsart@gmail.com</span>
+      <span class="copy" title="Click to copy" @click="copyText()"> art@meadowpaints.com</span>
       to inquire about commissions.
     </div>
     <div class="lighbox-gallery">
