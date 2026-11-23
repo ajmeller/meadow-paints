@@ -3,17 +3,17 @@ import LightboxImage from '../../components/LightboxImage.vue'
 import Sylvan from '../../assets/img/paintings/sylvan.jpeg'
 import Remus from '../../assets/img/paintings/remus.jpeg'
 import Sunset from '../../assets/img/paintings/sunset-in-candy.jpeg'
-import Hi from '../../assets/img/paintings/hi.jpg'
+import Hi from '../../assets/img/paintings/hi.jpeg'
 import dave from '../../assets/img/paintings/dave.jpg'
 import Gibby from '../../assets/img/paintings/gibby.jpg'
 import LeafFallDay from '../../assets/img/paintings/leaf-fall-day.jpg'
 import LotusEater from '../../assets/img/paintings/lotus-eater.jpeg'
-import Earth from '../../assets/img/paintings/earth.jpg'
+import Earth from '../../assets/img/paintings/earth.jpeg'
 import NeonSurf from '../../assets/img/paintings/neon-surf.jpeg'
 import Iris from '../../assets/img/paintings/iris.jpg'
 import SamsFire from '../../assets/img/paintings/sams-fire.jpeg'
 import BigBright from '../../assets/img/paintings/big-bright.jpeg'
-import ThreePigs from '../../assets/img/paintings/three-pigs.jpg'
+import ThreePigs from '../../assets/img/paintings/three-pigs.jpeg'
 import AllOver from '../../assets/img/paintings/all-over.jpeg'
 import Snoozin from '../../assets/img/paintings/snoozin.jpg'
 import Tidepool from '../../assets/img/paintings/tidepool.jpeg'
@@ -57,12 +57,12 @@ import Milkweed from '../../assets/img/paintings/milkweed.jpeg'
           <LightboxImage :image="Heaven" caption="Heaven is a summer | Digital painting | 2026" />
           <LightboxImage
             :image="Dunes"
-            caption="Pitcher's Thistle On Dune | Acrylic on plaster board | 2025 | Available"
+            caption="Pitcher's Thistle On Dune | Acrylic on plaster board | 2025"
             alt="Painting of Lake Michigan dunes at sunset with a pitcher's thistle and monarch in the foreground."
           />
           <LightboxImage
             :image="Everything"
-            caption="Everything is everything | Acrylic on wood | 2025 | Available"
+            caption="Everything is everything | Acrylic on wood | 2026"
           />
           <LightboxImage :image="Gem" caption="Gem | Digital painting | 2026" />
           <LightboxImage :image="LotusEater" caption="Lotus eater | Digital painting | 2023" />
@@ -73,7 +73,7 @@ import Milkweed from '../../assets/img/paintings/milkweed.jpeg'
         </div>
 
         <div class="col item">
-          <LightboxImage :image="Tidepool" caption="Tidepool | Oil on wood | 2025 | Available" />
+          <LightboxImage :image="Tidepool" caption="Tidepool | Oil on wood | 2025" />
           <LightboxImage :image="BigBright" caption="Big Bright! | Acrylic on wood | 2022" />
           <LightboxImage
             :image="Sunset"
